@@ -1,0 +1,24 @@
+{
+  "devDependencies": {
+    "sass": "^1.83.0",
+    "vitepress": "^1.5.0",
+    "vitepress-sidebar": "^1.30.2"
+  },
+  "scripts": {
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs"
+  },
+  "dependencies": {
+    "@ant-design/icons-vue": "^7.0.1",
+    "@giscus/vue": "^3.1.1",
+    "animate.css": "^4.1.1",
+    "ant-design-vue": "4.x",
+    "express": "^4.21.2",
+    "md-editor-v3": "^5.1.1",
+    "multer": "1.4.5-lts.1",
+    "tippy.js": "^6.3.7",
+    "vue3-calendar-heatmap": "^2.0.5",
+    "vuejs-heatmap": "^1.1.7"
+  }
+}

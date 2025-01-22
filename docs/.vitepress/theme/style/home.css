@@ -1,0 +1,87 @@
+.ant-segmented-item-selected {
+  background-color: #3b54e128 !important;
+  >.ant-segmented-item-label {
+    color: var(--vp-c-brand-1);
+  }
+}
+.ant-segmented-item-label {
+  color: var(--vp-c-text-1);
+}
+.ant-segmented-group >div {
+  background: #6c7feb3e !important;
+}
+.v-enter-active {
+  background-color: #6c7feb3e !important;
+}
+.ant-layout-sider  {
+  width: 320px !important;
+  max-width: 320px !important;
+  flex: 0 0 320px !important;
+  margin-left: 20px;
+  background-color: transparent !important;
+  .ant-card-actions {
+    background-color: var(--vp-bg-layoutContent) !important;
+    span{
+      color: var(--vp-user-card-font-cl-2) !important;
+    }
+  }
+  .ant-card-meta-detail {
+    overflow: hidden;
+  }
+}
+.ant-card-meta-detail div:nth-child(2) {
+  /* height: 50px; */
+  /* 超出2行 ... */
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  display: -webkit-box !important;
+  -webkit-line-clamp: 2 !important;
+  -webkit-box-orient: vertical !important;
+}
+/* .ant-card-body {
+  color: var(--vp-user-card-font-cl-2) !important;
+} */
+.ant-layout-content {
+  padding: 10px;
+  background: var(--vp-bg-layoutContent);
+  border-radius: 12px;
+  border: 1px solid var(--color-border-secondary);
+  .ant-card-actions {
+    background-color: var(--vp-bg-layoutContent) !important;
+    span{
+      color: var(--vp-user-card-font-cl-2) !important;
+    }
+  }
+  .ant-card-meta-detail {
+    div:nth-child(1) {
+      color: var(--vp-user-card-font-cl-1) !important;
+      transition: 300ms;
+    }
+    div:nth-child(2) {
+      color: var(--vp-user-card-font-cl-2) !important;
+    }
+  }
+  .ant-card-meta-detail:hover {
+    div:nth-child(1) {
+      color: var(--vp-c-brand-1) !important;
+    }
+    div:nth-child(2) {
+      color: var(--vp-user-card-font-cl-2) !important;
+    }
+  }
+}
+
+#__next .w-full  {
+  width: 99.9% !important;
+}
+
+.ant-card:hover img {
+  transform: scale(1.1);
+}
+.ant-card img {
+  transition: transform 0.3s ease-in-out;
+}
+.ant-card-cover {
+  border-radius: 12px 12px 0px 0px;
+  overflow: hidden;
+}

@@ -1,0 +1,4 @@
+---
+layout: MusicTemplate
+footer: false
+---

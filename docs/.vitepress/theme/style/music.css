@@ -1,0 +1,8 @@
+.ant-modal-content {
+  background-color: var(--vp-c-bg-soft) !important;
+  color: var(--vp-c-text-1);
+}
+.ant-modal-content .ant-modal-title {
+  background-color: var(--vp-c-bg-soft) !important;
+  color: var(--vp-c-text-1);
+}

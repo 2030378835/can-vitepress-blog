@@ -1,0 +1,98 @@
+/* var.css */
+:root {
+  --vp-c-brand-1: #1677ff;
+  --vp-h-bar: #2b6adf27;
+  --vp-c-brand-2: #4096ff;
+  --vp-c-brand-3: #4096ff;
+  --vp-time-line: #efefef;
+  --vp-bg-color: #5d62ec17;
+  --vp-bg-swiper-bar: #ffffff;
+  --vp-shadow-swpier-color: 0 0 10px rgba(0, 0, 0, 0.811);
+  --vp-user-card-font-cl-1:  rgba(0, 0, 0, 0.95);
+  --vp-user-card-font-cl-2: rgba(0, 0, 0, 0.45);
+  --vp-bg-segmented-bar: #6059e40f;
+  --vp-bg-layoutContent: #fff;
+  --vp-bg-article-bg: #ffffff;
+  --color-border-secondary: #efefef;
+  --color-text: rgba(0, 0, 0, 0.88);
+  --color-bg-mask: rgba(0, 0, 0, 0.6);
+  --color-Fill-Secondary:var(--vp-c-brand-1);
+  --vp-bg-card: var(--vp-c-bg-soft);
+  --vp-bg-user: #fff;
+  --color-bg-container: #fff;
+  --color-bg-elevated: #fff;
+  --table-bg-container: #fff;
+}
+
+.dark {
+  --vp-c-brand-1: #1677ff;
+  --vp-c-brand-2: #4096ff;
+  --vp-c-brand-3: #4096ff;
+  --vp-c-text-1: #fff;
+  --vp-time-line: #444444;
+  --vp-bg-color: #5d72ec00;
+  --vp-bg-swiper-bar: var(--vp-c-bg-soft);
+  --vp-shadow-swpier-bar: 1px 1px 2px 1px rgba(47, 47, 47, 0.096);
+  --vp-user-card-font-cl-2: rgba(255, 255, 255, 0.65);
+  --vp-user-card-font-cl-1: rgba(255, 255, 255, 0.95);
+  --vp-bg-segmented-bar: #00000060;
+  --vp-bg-layoutContent: var(--vp-c-bg-soft);
+  --vp-bg-article-bg: #111111c6;
+  --color-border-secondary: #2b2b2b;
+  --color-text: rgba(255, 255, 255, 0.88);
+  --color-bg-mask: rgba(255, 255, 255, 0.6);
+  --color-Fill-Secondary:var(--vp-c-brand-1);
+  --vp-bg-card: rgba(0, 0, 0, 0.48);
+  --vp-bg-user: var(--vp-bg-card);
+  --color-bg-container: #1a1a1abd;
+  --color-bg-elevated: #1a1a1a;
+  --table-bg-container: #1a1a1a;
+}
+/* 以前的vp-c-brand已弃用 */
+
+:root {
+  /* hero标题渐变色 */
+  --vp-home-hero-name-color: transparent;
+  --vp-home-hero-name-background: -webkit-linear-gradient(
+    120deg,
+    var(--vp-c-brand-1),
+    #7d41ff
+  );
+
+  /*hero logo背景渐变色 */
+  --vp-home-hero-image-background-image: linear-gradient(
+    -45deg,
+    var(--vp-c-brand-1) 50%,
+    #7d41ff 50%
+  );
+  --vp-home-hero-image-filter: blur(40px);
+}
+
+/* 也可自行单独修改brand按钮 */
+/* :root {
+  --vp-button-brand-border: #F6CEEC;
+  --vp-button-brand-text: #F6CEEC;
+  --vp-button-brand-bg: #D939CD;
+
+  --vp-button-brand-hover-border: #F6CEEC;
+  --vp-button-brand-hover-text: #fff;
+  --vp-button-brand-hover-bg: #D939CD;
+
+  --vp-button-brand-active-border: #F6CEEC;
+} */
+
+.VPSidebarItem .item .text{
+  white-space: nowrap; /* 防止文本换行 */
+  overflow: hidden; /* 隐藏溢出的文本 */
+  text-overflow: ellipsis; /* 显示省略号 */
+  max-width: 200px; /* 确保文本宽度不超过容器 */
+  height: 22px;
+  padding: 0px;
+}
+.VPSidebarItem .VPLink ,.VPSidebarItem .link ,.VPSidebarItem .link {
+  height: 28px;
+  line-height: 28px;
+}
+p {
+  padding: 0px;
+}

@@ -1,0 +1,6 @@
+.ant-timeline-item-head {
+  border-color: var(--vp-c-brand-1) !important;
+}
+.ant-timeline-item-tail {
+  border-inline-start: 2px solid var(--vp-time-line) !important;
+}
