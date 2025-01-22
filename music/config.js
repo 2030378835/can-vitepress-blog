@@ -1,20 +1,23 @@
 import { feng, huahai, lantingxu, qingtian, daoxiang,shouxidecongqian } from './musicmsg.js'
-
+import defaultConfigES from '../../../vitepress.config.ES.ts'
 export default [
   {
     name: '枫',
     singger: '周杰伦',
     msg: feng,
+    desktop: defaultConfigES.base+'/desktop/0.jpg'
   },
   {
     name: '花海',
     singger: '周杰伦',
     msg: huahai,
+    desktop: defaultConfigES.base+'/desktop/1.jpg'
   },
   {
     name: '兰亭序',
     singger: '周杰伦',
     msg: lantingxu,
+    desktop: defaultConfigES.base+'/desktop/2.jpg'
   },
   {
     name: '晴天',
