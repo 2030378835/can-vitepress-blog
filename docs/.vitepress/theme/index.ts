@@ -8,6 +8,10 @@ import Template from './template/index.vue'
 import MusicTemplate from './template/music.vue'
 import HomeTemplate from './template/home.vue'
 
+// 公共组件
+import DropdownItem from './components/dropdownItem/index.vue';
+import Dropdown from './components/dropdown/index.vue';
+
 import MyLayout from './layout/index.vue'
 import { Image } from 'ant-design-vue';
 import "./style/index.css"; //引入自定义的样式
@@ -20,6 +24,10 @@ export default {
     console.log(routes);
     app.use(Antd)
     app.use(VueCalendarHeatmap)
+
+    app.component('DropdownItem', DropdownItem)
+    app.component('Dropdown', Dropdown)
+
     app.component('Image', Image)
     app.component('Template', Template)
     app.component('HomeTemplate', HomeTemplate)

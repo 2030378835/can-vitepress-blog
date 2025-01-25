@@ -113,7 +113,7 @@
             <div v-if="posData.length" class="new-list">
               <div @click="handleClick(item.url)" v-for="(item, index) in posData.slice(0,10)" :key="item.title+index">
                 <span>{{ item.title }}</span>
-                <span>{{ item.date }}</span>
+                <span>{{ item.date.slice(0,10) }}</span>
               </div>
             </div>
             <Empty :image="Empty.PRESENTED_IMAGE_SIMPLE" v-else>

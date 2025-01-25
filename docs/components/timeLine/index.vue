@@ -16,7 +16,15 @@
           {{index+1}}、
           <a :href="i.url">{{ i.title }}（{{i.tags?.join('、')}}）</a> 
           by 
-          {{ i?.author ? i.author : 'can' }}
+          <Tooltip placement="topLeft">
+            <template #title>
+              <span>{{i?.author ? i.author : defaultConfigES.defaultAuther}}</span>
+            </template>
+            <Avatar 
+              :size="20" 
+              :src="!i?.author ? defaultConfigES.base+defaultConfigES.blogLogo :  defaultConfigES.base+'/icon/user.svg'"
+            />
+          </Tooltip>
         </span>
         <span>{{i.date}}</span>
       </div>
@@ -26,8 +34,8 @@
 
 <script setup>
   import { defineProps } from 'vue'
-  import { Timeline, TimelineItem } from 'ant-design-vue'
-
+  import { Timeline, TimelineItem, Avatar, Tooltip } from 'ant-design-vue'
+  import defaultConfigES from '../../../vitepress.config.ES.ts'
   const props = defineProps(['timelineData'])
 </script>
 

@@ -38,13 +38,28 @@
   >
     <Layout>
       <template #doc-before>
-        <span
-          style="
-            font-size: 32px;
-            font-weight: 600;
-            line-height: 42px;
-          "
-        > {{ page.frontmatter.title }}</span>
+        <div style="display: flex; align-items: flex-end;">        
+          <span
+            style="
+              font-size: 32px;
+              font-weight: 600;
+              line-height: 42px;
+            "
+          > 
+            {{ page.frontmatter.title }}
+          </span>
+          <span style="margin:0 8px;font-size: small;">by</span>
+          <Tooltip placement="topLeft">
+            <template #title>
+              <span>{{articleData?.author ? articleData.author : defaultConfigES.defaultAuther}}</span>
+            </template>
+            <Avatar 
+              :size="40" 
+              :src="!articleData?.author ? defaultConfigES.base+defaultConfigES.blogLogo :  defaultConfigES.base+'/icon/user.svg'"
+            />
+          </Tooltip>
+        </div>
+
         <!-- <Image
           v-if="page.frontmatter.cover"
           :src="page.frontmatter.cover"
@@ -80,11 +95,16 @@
 </template>
 
 <script setup>
+import { computed } from 'vue'
 import Giscus from "@giscus/vue";
 import DefaultTheme from "vitepress/theme";
-import { Image, ConfigProvider } from 'ant-design-vue'
+import { Image, ConfigProvider, Avatar, Tooltip } from 'ant-design-vue'
 import { useData } from "vitepress";
-
+import defaultConfigES from '../../../../vitepress.config.ES.ts'
 const { Layout } = DefaultTheme;
 const { isDark, page } = useData();
+
+const articleData = computed(() => {
+  return page.value.frontmatter
+})
 </script>

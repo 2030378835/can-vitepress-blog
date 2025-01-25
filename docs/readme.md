@@ -1,8 +1,10 @@
 ---
 layout: doc
+title: '项目说明'
 ---
 <script setup>
   import { ref } from 'vue'
+  import { withBase } from 'vitepress'
   import Progress from './components/progress/index.vue'
   import EllipsisSpan from './components/ellipsisSpan/index.vue'
   import { Checkbox } from 'ant-design-vue'
@@ -24,7 +26,6 @@ layout: doc
   }
 </style>
 
-# 项目说明
 ## 一、简介
 ### 1.1 介绍
 can-blog 是一个基于 vitepress + antdv 的博客系统，基于 can-blog 开发者可以快速搭建自己的博客系统。
@@ -85,29 +86,31 @@ can-blog 是一个基于 vitepress + antdv 的博客系统，基于 can-blog 开
 
 - <div class="listItem">
     <Checkbox v-model:checked="checked" />
-    <a href="https://giscus.app/zh-CN" target="_blank">giscus</a> 驱动留言/评论
+    <a class="vp-external-link-icon" href="https://giscus.app/zh-CN" target="_blank">giscus</a> 驱动留言/评论
   </div>
 - <div class="listItem"><Checkbox v-model:checked="checked" />轮播图</div>
-- <div class="listItem"><Checkbox v-model:checked="checked" />音乐播放器</div>
+- <div class="listItem"><Checkbox v-model:checked="checked" />
+    <a :href="withBase('/music')" target="_blank">音乐播放器</a>
+  </div>
 - <div class="listItem"><Checkbox v-model:checked="checked" />归档热力图</div>
 - <div class="listItem"><Checkbox v-model:checked="checked" />归档时间线</div>
 - <div class="listItem">
     <Checkbox v-model:checked="checked" />
-    <a href="https://github.com/imzbf/md-editor-v3" target="_blank">md-editor-v3</a>支持本地md编写支持上传图片
+    <a class="vp-external-link-icon" href="https://github.com/imzbf/md-editor-v3" target="_blank">md-editor-v3</a>支持本地md编写支持上传图片
   </div>
 - <div class="listItem"><Checkbox v-model:checked="checked" />文章锚点支持2到6级</div>
+- <div class="listItem"><Checkbox v-model:checked="checked" />图片预览</div>
+- <div class="listItem"><Checkbox v-model:checked="checked" />antdv主题色快捷更换</div>
+- <div class="listItem"><Checkbox v-model:checked="checked" />导航栏组件封装</div>
 
 ### 3.2 待上线功能
-
+- <div class="listItem"><Progress :percent="100"/> 首页文章列表优化</div>
 - <div class="listItem"><Progress :percent="90"/> 代码结构优化</div>
-- <div class="listItem"><Progress :percent="70"/> 首页文章列表优化</div>
 - <div class="listItem"><Progress :percent="60"/> 文章布局优化</div>
 - <div class="listItem"><Progress :percent="60"/> 动态文章配置文件输出</div>
-- <div class="listItem"><Progress :percent="50"/> antdv主题色快捷更换</div>
 - <div class="listItem"><Progress :percent="20"/> Hooks开发</div>
 - <div class="listItem"><Progress :percent="10"/> 标签转图片为文章封面图</div>
 - <div class="listItem"><Progress :percent="10"/> 博客概览信息（文章数，网站运行天数，字数，访问量等等）</div>
-- <div class="listItem"><Progress :percent="0"/> 图片预览</div>
 - <div class="listItem"><Progress :percent="0"/> 脚手架配置项目（重点）</div>
 
 ## 四、最后

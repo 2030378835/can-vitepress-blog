@@ -1,7 +1,8 @@
 import {
   markdown
-} from "./chunk-3GA3I3DI.js";
-import "./chunk-UXLNL34A.js";
+} from "./chunk-STX76DR3.js";
+import "./chunk-H7BPK76W.js";
+import "./chunk-RPXURU2U.js";
 import "./chunk-WSVGI6ZT.js";
 import {
   autocompletion,
@@ -9,7 +10,6 @@ import {
   closeBracketsKeymap,
   completionKeymap
 } from "./chunk-4EXID5FW.js";
-import "./chunk-RPXURU2U.js";
 import {
   Annotation,
   ChangeDesc,
@@ -95,7 +95,7 @@ import {
   toRef,
   useId,
   watch
-} from "./chunk-JN5NFW2R.js";
+} from "./chunk-667CXCTG.js";
 import {
   __commonJS,
   __export,
@@ -106,7 +106,7 @@ import {
   __privateWrapper,
   __publicField,
   __toESM
-} from "./chunk-SNAQBZPT.js";
+} from "./chunk-WOOG5QLI.js";
 
 // node_modules/.pnpm/toggle-selection@1.0.6/node_modules/toggle-selection/index.js
 var require_toggle_selection = __commonJS({
@@ -30701,7 +30701,7 @@ function legacy(parser2) {
   return new LanguageSupport(StreamLanguage.define(parser2));
 }
 function sql(dialectName) {
-  return import("./dist-NY3ZHLQW.js").then((m) => m.sql({ dialect: m[dialectName] }));
+  return import("./dist-ASYOG4FL.js").then((m) => m.sql({ dialect: m[dialectName] }));
 }
 var languages = [
   // New-style language modes
@@ -30709,7 +30709,7 @@ var languages = [
     name: "C",
     extensions: ["c", "h", "ino"],
     load() {
-      return import("./dist-KOL7CAWK.js").then((m) => m.cpp());
+      return import("./dist-ADUZUTXD.js").then((m) => m.cpp());
     }
   }),
   LanguageDescription.of({
@@ -30717,7 +30717,7 @@ var languages = [
     alias: ["cpp"],
     extensions: ["cpp", "c++", "cc", "cxx", "hpp", "h++", "hh", "hxx"],
     load() {
-      return import("./dist-KOL7CAWK.js").then((m) => m.cpp());
+      return import("./dist-ADUZUTXD.js").then((m) => m.cpp());
     }
   }),
   LanguageDescription.of({
@@ -30732,14 +30732,14 @@ var languages = [
     name: "CSS",
     extensions: ["css"],
     load() {
-      return import("./dist-UCJT4CYT.js").then((m) => m.css());
+      return import("./dist-XIYVU3YN.js").then((m) => m.css());
     }
   }),
   LanguageDescription.of({
     name: "Go",
     extensions: ["go"],
     load() {
-      return import("./dist-HJRXSE4J.js").then((m) => m.go());
+      return import("./dist-SSMR4DKY.js").then((m) => m.go());
     }
   }),
   LanguageDescription.of({
@@ -30747,14 +30747,14 @@ var languages = [
     alias: ["xhtml"],
     extensions: ["html", "htm", "handlebars", "hbs"],
     load() {
-      return import("./dist-CLYU7MPW.js").then((m) => m.html());
+      return import("./dist-GOFGTP6R.js").then((m) => m.html());
     }
   }),
   LanguageDescription.of({
     name: "Java",
     extensions: ["java"],
     load() {
-      return import("./dist-PRPKC2GC.js").then((m) => m.java());
+      return import("./dist-XT4Z37EJ.js").then((m) => m.java());
     }
   }),
   LanguageDescription.of({
@@ -30762,7 +30762,7 @@ var languages = [
     alias: ["ecmascript", "js", "node"],
     extensions: ["js", "mjs", "cjs"],
     load() {
-      return import("./dist-HWKWJDKW.js").then((m) => m.javascript());
+      return import("./dist-XXSTEWLS.js").then((m) => m.javascript());
     }
   }),
   LanguageDescription.of({
@@ -30770,28 +30770,28 @@ var languages = [
     alias: ["json5"],
     extensions: ["json", "map"],
     load() {
-      return import("./dist-PWBMST2M.js").then((m) => m.json());
+      return import("./dist-TPCVVNHJ.js").then((m) => m.json());
     }
   }),
   LanguageDescription.of({
     name: "JSX",
     extensions: ["jsx"],
     load() {
-      return import("./dist-HWKWJDKW.js").then((m) => m.javascript({ jsx: true }));
+      return import("./dist-XXSTEWLS.js").then((m) => m.javascript({ jsx: true }));
     }
   }),
   LanguageDescription.of({
     name: "LESS",
     extensions: ["less"],
     load() {
-      return import("./dist-PHMW657J.js").then((m) => m.less());
+      return import("./dist-64E6PWL6.js").then((m) => m.less());
     }
   }),
   LanguageDescription.of({
     name: "Liquid",
     extensions: ["liquid"],
     load() {
-      return import("./dist-DGTVMPAT.js").then((m) => m.liquid());
+      return import("./dist-Z42GVE7L.js").then((m) => m.liquid());
     }
   }),
   LanguageDescription.of({
@@ -30804,7 +30804,7 @@ var languages = [
     name: "Markdown",
     extensions: ["md", "markdown", "mkd"],
     load() {
-      return import("./dist-ZOITVDEC.js").then((m) => m.markdown());
+      return import("./dist-C73YL3Q2.js").then((m) => m.markdown());
     }
   }),
   LanguageDescription.of({
@@ -30823,7 +30823,7 @@ var languages = [
     name: "PHP",
     extensions: ["php", "php3", "php4", "php5", "php7", "phtml"],
     load() {
-      return import("./dist-TO2LGAGO.js").then((m) => m.php());
+      return import("./dist-PUZPCE57.js").then((m) => m.php());
     }
   }),
   LanguageDescription.of({
@@ -30844,28 +30844,28 @@ var languages = [
     extensions: ["BUILD", "bzl", "py", "pyw"],
     filename: /^(BUCK|BUILD)$/,
     load() {
-      return import("./dist-TYIJ4YXB.js").then((m) => m.python());
+      return import("./dist-JLQOPFWJ.js").then((m) => m.python());
     }
   }),
   LanguageDescription.of({
     name: "Rust",
     extensions: ["rs"],
     load() {
-      return import("./dist-VZHQTE7R.js").then((m) => m.rust());
+      return import("./dist-ART2YNOA.js").then((m) => m.rust());
     }
   }),
   LanguageDescription.of({
     name: "Sass",
     extensions: ["sass"],
     load() {
-      return import("./dist-AF6IRQU2.js").then((m) => m.sass({ indented: true }));
+      return import("./dist-ZYU4L7CI.js").then((m) => m.sass({ indented: true }));
     }
   }),
   LanguageDescription.of({
     name: "SCSS",
     extensions: ["scss"],
     load() {
-      return import("./dist-AF6IRQU2.js").then((m) => m.sass());
+      return import("./dist-ZYU4L7CI.js").then((m) => m.sass());
     }
   }),
   LanguageDescription.of({
@@ -30885,7 +30885,7 @@ var languages = [
     name: "TSX",
     extensions: ["tsx"],
     load() {
-      return import("./dist-HWKWJDKW.js").then((m) => m.javascript({ jsx: true, typescript: true }));
+      return import("./dist-XXSTEWLS.js").then((m) => m.javascript({ jsx: true, typescript: true }));
     }
   }),
   LanguageDescription.of({
@@ -30893,14 +30893,14 @@ var languages = [
     alias: ["ts"],
     extensions: ["ts", "mts", "cts"],
     load() {
-      return import("./dist-HWKWJDKW.js").then((m) => m.javascript({ typescript: true }));
+      return import("./dist-XXSTEWLS.js").then((m) => m.javascript({ typescript: true }));
     }
   }),
   LanguageDescription.of({
     name: "WebAssembly",
     extensions: ["wat", "wast"],
     load() {
-      return import("./dist-LETRO6EE.js").then((m) => m.wast());
+      return import("./dist-LJLH6RUL.js").then((m) => m.wast());
     }
   }),
   LanguageDescription.of({
@@ -30908,7 +30908,7 @@ var languages = [
     alias: ["rss", "wsdl", "xsd"],
     extensions: ["xml", "xsl", "xsd", "svg"],
     load() {
-      return import("./dist-OXN4DHEJ.js").then((m) => m.xml());
+      return import("./dist-VTJJOY55.js").then((m) => m.xml());
     }
   }),
   LanguageDescription.of({
@@ -30916,7 +30916,7 @@ var languages = [
     alias: ["yml"],
     extensions: ["yaml", "yml"],
     load() {
-      return import("./dist-WYAXFLUW.js").then((m) => m.yaml());
+      return import("./dist-CZSUJB2K.js").then((m) => m.yaml());
     }
   }),
   // Legacy modes ported from CodeMirror 5
@@ -30924,7 +30924,7 @@ var languages = [
     name: "APL",
     extensions: ["dyalog", "apl"],
     load() {
-      return import("./apl-5JO3G6UQ.js").then((m) => legacy(m.apl));
+      return import("./apl-RKWTSSFP.js").then((m) => legacy(m.apl));
     }
   }),
   LanguageDescription.of({
@@ -30932,35 +30932,35 @@ var languages = [
     alias: ["asciiarmor"],
     extensions: ["asc", "pgp", "sig"],
     load() {
-      return import("./asciiarmor-JH7ZLZYK.js").then((m) => legacy(m.asciiArmor));
+      return import("./asciiarmor-XVG6OJMM.js").then((m) => legacy(m.asciiArmor));
     }
   }),
   LanguageDescription.of({
     name: "ASN.1",
     extensions: ["asn", "asn1"],
     load() {
-      return import("./asn1-V4X6ZIMR.js").then((m) => legacy(m.asn1({})));
+      return import("./asn1-OURJ6OS5.js").then((m) => legacy(m.asn1({})));
     }
   }),
   LanguageDescription.of({
     name: "Asterisk",
     filename: /^extensions\.conf$/i,
     load() {
-      return import("./asterisk-WFZZWH7T.js").then((m) => legacy(m.asterisk));
+      return import("./asterisk-T34QZM6V.js").then((m) => legacy(m.asterisk));
     }
   }),
   LanguageDescription.of({
     name: "Brainfuck",
     extensions: ["b", "bf"],
     load() {
-      return import("./brainfuck-KHH5QC2X.js").then((m) => legacy(m.brainfuck));
+      return import("./brainfuck-227SZ6WS.js").then((m) => legacy(m.brainfuck));
     }
   }),
   LanguageDescription.of({
     name: "Cobol",
     extensions: ["cob", "cpy"],
     load() {
-      return import("./cobol-2VNJXPK3.js").then((m) => legacy(m.cobol));
+      return import("./cobol-YCYLSP4C.js").then((m) => legacy(m.cobol));
     }
   }),
   LanguageDescription.of({
@@ -30968,28 +30968,28 @@ var languages = [
     alias: ["csharp", "cs"],
     extensions: ["cs"],
     load() {
-      return import("./clike-IKXGMLZR.js").then((m) => legacy(m.csharp));
+      return import("./clike-XP4KDUEN.js").then((m) => legacy(m.csharp));
     }
   }),
   LanguageDescription.of({
     name: "Clojure",
     extensions: ["clj", "cljc", "cljx"],
     load() {
-      return import("./clojure-4VZ2EKEV.js").then((m) => legacy(m.clojure));
+      return import("./clojure-NWCFKJXM.js").then((m) => legacy(m.clojure));
     }
   }),
   LanguageDescription.of({
     name: "ClojureScript",
     extensions: ["cljs"],
     load() {
-      return import("./clojure-4VZ2EKEV.js").then((m) => legacy(m.clojure));
+      return import("./clojure-NWCFKJXM.js").then((m) => legacy(m.clojure));
     }
   }),
   LanguageDescription.of({
     name: "Closure Stylesheets (GSS)",
     extensions: ["gss"],
     load() {
-      return import("./css-JQMBRNHK.js").then((m) => legacy(m.gss));
+      return import("./css-GOZN7LDT.js").then((m) => legacy(m.gss));
     }
   }),
   LanguageDescription.of({
@@ -30997,7 +30997,7 @@ var languages = [
     extensions: ["cmake", "cmake.in"],
     filename: /^CMakeLists\.txt$/,
     load() {
-      return import("./cmake-SSRZIWUY.js").then((m) => legacy(m.cmake));
+      return import("./cmake-YQIYQFNV.js").then((m) => legacy(m.cmake));
     }
   }),
   LanguageDescription.of({
@@ -31005,7 +31005,7 @@ var languages = [
     alias: ["coffee", "coffee-script"],
     extensions: ["coffee"],
     load() {
-      return import("./coffeescript-E3GFTIRU.js").then((m) => legacy(m.coffeeScript));
+      return import("./coffeescript-EL6RWXKF.js").then((m) => legacy(m.coffeeScript));
     }
   }),
   LanguageDescription.of({
@@ -31013,144 +31013,144 @@ var languages = [
     alias: ["lisp"],
     extensions: ["cl", "lisp", "el"],
     load() {
-      return import("./commonlisp-ZCPJ4G4T.js").then((m) => legacy(m.commonLisp));
+      return import("./commonlisp-WXYOORZT.js").then((m) => legacy(m.commonLisp));
     }
   }),
   LanguageDescription.of({
     name: "Cypher",
     extensions: ["cyp", "cypher"],
     load() {
-      return import("./cypher-EBZUTNR6.js").then((m) => legacy(m.cypher));
+      return import("./cypher-362IH562.js").then((m) => legacy(m.cypher));
     }
   }),
   LanguageDescription.of({
     name: "Cython",
     extensions: ["pyx", "pxd", "pxi"],
     load() {
-      return import("./python-CGBKCPHG.js").then((m) => legacy(m.cython));
+      return import("./python-5HCA3IM4.js").then((m) => legacy(m.cython));
     }
   }),
   LanguageDescription.of({
     name: "Crystal",
     extensions: ["cr"],
     load() {
-      return import("./crystal-4JBBL72B.js").then((m) => legacy(m.crystal));
+      return import("./crystal-5E3OX63F.js").then((m) => legacy(m.crystal));
     }
   }),
   LanguageDescription.of({
     name: "D",
     extensions: ["d"],
     load() {
-      return import("./d-X2IMWT4D.js").then((m) => legacy(m.d));
+      return import("./d-GI4534UP.js").then((m) => legacy(m.d));
     }
   }),
   LanguageDescription.of({
     name: "Dart",
     extensions: ["dart"],
     load() {
-      return import("./clike-IKXGMLZR.js").then((m) => legacy(m.dart));
+      return import("./clike-XP4KDUEN.js").then((m) => legacy(m.dart));
     }
   }),
   LanguageDescription.of({
     name: "diff",
     extensions: ["diff", "patch"],
     load() {
-      return import("./diff-VLIKY77O.js").then((m) => legacy(m.diff));
+      return import("./diff-BR4QR4HG.js").then((m) => legacy(m.diff));
     }
   }),
   LanguageDescription.of({
     name: "Dockerfile",
     filename: /^Dockerfile$/,
     load() {
-      return import("./dockerfile-KBZZONPG.js").then((m) => legacy(m.dockerFile));
+      return import("./dockerfile-7LMVMU6J.js").then((m) => legacy(m.dockerFile));
     }
   }),
   LanguageDescription.of({
     name: "DTD",
     extensions: ["dtd"],
     load() {
-      return import("./dtd-KNY2BWJT.js").then((m) => legacy(m.dtd));
+      return import("./dtd-F6XEBQRF.js").then((m) => legacy(m.dtd));
     }
   }),
   LanguageDescription.of({
     name: "Dylan",
     extensions: ["dylan", "dyl", "intr"],
     load() {
-      return import("./dylan-IRLPTLWB.js").then((m) => legacy(m.dylan));
+      return import("./dylan-TUBYVHOY.js").then((m) => legacy(m.dylan));
     }
   }),
   LanguageDescription.of({
     name: "EBNF",
     load() {
-      return import("./ebnf-VK54KG7D.js").then((m) => legacy(m.ebnf));
+      return import("./ebnf-7SV6W33E.js").then((m) => legacy(m.ebnf));
     }
   }),
   LanguageDescription.of({
     name: "ECL",
     extensions: ["ecl"],
     load() {
-      return import("./ecl-KXDQ3EBF.js").then((m) => legacy(m.ecl));
+      return import("./ecl-S5IZBM2B.js").then((m) => legacy(m.ecl));
     }
   }),
   LanguageDescription.of({
     name: "edn",
     extensions: ["edn"],
     load() {
-      return import("./clojure-4VZ2EKEV.js").then((m) => legacy(m.clojure));
+      return import("./clojure-NWCFKJXM.js").then((m) => legacy(m.clojure));
     }
   }),
   LanguageDescription.of({
     name: "Eiffel",
     extensions: ["e"],
     load() {
-      return import("./eiffel-VAQKYOCR.js").then((m) => legacy(m.eiffel));
+      return import("./eiffel-ADTXUFCD.js").then((m) => legacy(m.eiffel));
     }
   }),
   LanguageDescription.of({
     name: "Elm",
     extensions: ["elm"],
     load() {
-      return import("./elm-2DAFVWOB.js").then((m) => legacy(m.elm));
+      return import("./elm-VSIEGDQF.js").then((m) => legacy(m.elm));
     }
   }),
   LanguageDescription.of({
     name: "Erlang",
     extensions: ["erl"],
     load() {
-      return import("./erlang-TX4SXMI7.js").then((m) => legacy(m.erlang));
+      return import("./erlang-ATICDWSI.js").then((m) => legacy(m.erlang));
     }
   }),
   LanguageDescription.of({
     name: "Esper",
     load() {
-      return import("./sql-3P7HMGXV.js").then((m) => legacy(m.esper));
+      return import("./sql-UL4IK3AX.js").then((m) => legacy(m.esper));
     }
   }),
   LanguageDescription.of({
     name: "Factor",
     extensions: ["factor"],
     load() {
-      return import("./factor-CYYHL5OI.js").then((m) => legacy(m.factor));
+      return import("./factor-BNVCKZSH.js").then((m) => legacy(m.factor));
     }
   }),
   LanguageDescription.of({
     name: "FCL",
     load() {
-      return import("./fcl-6HUNGFTI.js").then((m) => legacy(m.fcl));
+      return import("./fcl-6OHFSN6Q.js").then((m) => legacy(m.fcl));
     }
   }),
   LanguageDescription.of({
     name: "Forth",
     extensions: ["forth", "fth", "4th"],
     load() {
-      return import("./forth-UVNJTTF4.js").then((m) => legacy(m.forth));
+      return import("./forth-6SBBU6LJ.js").then((m) => legacy(m.forth));
     }
   }),
   LanguageDescription.of({
     name: "Fortran",
     extensions: ["f", "for", "f77", "f90", "f95"],
     load() {
-      return import("./fortran-QTCWEONZ.js").then((m) => legacy(m.fortran));
+      return import("./fortran-HMRM6PMD.js").then((m) => legacy(m.fortran));
     }
   }),
   LanguageDescription.of({
@@ -31158,21 +31158,21 @@ var languages = [
     alias: ["fsharp"],
     extensions: ["fs"],
     load() {
-      return import("./mllike-KPXN22HK.js").then((m) => legacy(m.fSharp));
+      return import("./mllike-DDELRCRG.js").then((m) => legacy(m.fSharp));
     }
   }),
   LanguageDescription.of({
     name: "Gas",
     extensions: ["s"],
     load() {
-      return import("./gas-I2UW5GJW.js").then((m) => legacy(m.gas));
+      return import("./gas-7IAMGYTI.js").then((m) => legacy(m.gas));
     }
   }),
   LanguageDescription.of({
     name: "Gherkin",
     extensions: ["feature"],
     load() {
-      return import("./gherkin-WI4IOTXF.js").then((m) => legacy(m.gherkin));
+      return import("./gherkin-OM3ARCMM.js").then((m) => legacy(m.gherkin));
     }
   }),
   LanguageDescription.of({
@@ -31180,41 +31180,41 @@ var languages = [
     extensions: ["groovy", "gradle"],
     filename: /^Jenkinsfile$/,
     load() {
-      return import("./groovy-OPFP3GO6.js").then((m) => legacy(m.groovy));
+      return import("./groovy-X6D6PMNI.js").then((m) => legacy(m.groovy));
     }
   }),
   LanguageDescription.of({
     name: "Haskell",
     extensions: ["hs"],
     load() {
-      return import("./haskell-RV3HBDPS.js").then((m) => legacy(m.haskell));
+      return import("./haskell-LDR6LETG.js").then((m) => legacy(m.haskell));
     }
   }),
   LanguageDescription.of({
     name: "Haxe",
     extensions: ["hx"],
     load() {
-      return import("./haxe-2DKYIFSK.js").then((m) => legacy(m.haxe));
+      return import("./haxe-OCRCLPDK.js").then((m) => legacy(m.haxe));
     }
   }),
   LanguageDescription.of({
     name: "HXML",
     extensions: ["hxml"],
     load() {
-      return import("./haxe-2DKYIFSK.js").then((m) => legacy(m.hxml));
+      return import("./haxe-OCRCLPDK.js").then((m) => legacy(m.hxml));
     }
   }),
   LanguageDescription.of({
     name: "HTTP",
     load() {
-      return import("./http-ETH4XKUF.js").then((m) => legacy(m.http));
+      return import("./http-75XXPQRG.js").then((m) => legacy(m.http));
     }
   }),
   LanguageDescription.of({
     name: "IDL",
     extensions: ["pro"],
     load() {
-      return import("./idl-QAUHD7H5.js").then((m) => legacy(m.idl));
+      return import("./idl-2VOJNX4J.js").then((m) => legacy(m.idl));
     }
   }),
   LanguageDescription.of({
@@ -31222,28 +31222,28 @@ var languages = [
     alias: ["jsonld"],
     extensions: ["jsonld"],
     load() {
-      return import("./javascript-EZE2AJZS.js").then((m) => legacy(m.jsonld));
+      return import("./javascript-EPJJBNFK.js").then((m) => legacy(m.jsonld));
     }
   }),
   LanguageDescription.of({
     name: "Jinja2",
     extensions: ["j2", "jinja", "jinja2"],
     load() {
-      return import("./jinja2-LUDCYB2X.js").then((m) => legacy(m.jinja2));
+      return import("./jinja2-5KHFIXCH.js").then((m) => legacy(m.jinja2));
     }
   }),
   LanguageDescription.of({
     name: "Julia",
     extensions: ["jl"],
     load() {
-      return import("./julia-7XLCWSFV.js").then((m) => legacy(m.julia));
+      return import("./julia-ZKXNRAEN.js").then((m) => legacy(m.julia));
     }
   }),
   LanguageDescription.of({
     name: "Kotlin",
     extensions: ["kt", "kts"],
     load() {
-      return import("./clike-IKXGMLZR.js").then((m) => legacy(m.kotlin));
+      return import("./clike-XP4KDUEN.js").then((m) => legacy(m.kotlin));
     }
   }),
   LanguageDescription.of({
@@ -31251,70 +31251,70 @@ var languages = [
     alias: ["ls"],
     extensions: ["ls"],
     load() {
-      return import("./livescript-SXCJB7NR.js").then((m) => legacy(m.liveScript));
+      return import("./livescript-7SAAS5QZ.js").then((m) => legacy(m.liveScript));
     }
   }),
   LanguageDescription.of({
     name: "Lua",
     extensions: ["lua"],
     load() {
-      return import("./lua-HBRXJKG2.js").then((m) => legacy(m.lua));
+      return import("./lua-TWXNKGGQ.js").then((m) => legacy(m.lua));
     }
   }),
   LanguageDescription.of({
     name: "mIRC",
     extensions: ["mrc"],
     load() {
-      return import("./mirc-WQ3JPDUD.js").then((m) => legacy(m.mirc));
+      return import("./mirc-N73CAEVB.js").then((m) => legacy(m.mirc));
     }
   }),
   LanguageDescription.of({
     name: "Mathematica",
     extensions: ["m", "nb", "wl", "wls"],
     load() {
-      return import("./mathematica-6KHR2BEJ.js").then((m) => legacy(m.mathematica));
+      return import("./mathematica-4OSZTNVN.js").then((m) => legacy(m.mathematica));
     }
   }),
   LanguageDescription.of({
     name: "Modelica",
     extensions: ["mo"],
     load() {
-      return import("./modelica-RZZB2JGA.js").then((m) => legacy(m.modelica));
+      return import("./modelica-XCXFH32D.js").then((m) => legacy(m.modelica));
     }
   }),
   LanguageDescription.of({
     name: "MUMPS",
     extensions: ["mps"],
     load() {
-      return import("./mumps-G75Q35EI.js").then((m) => legacy(m.mumps));
+      return import("./mumps-TTFDO47Q.js").then((m) => legacy(m.mumps));
     }
   }),
   LanguageDescription.of({
     name: "Mbox",
     extensions: ["mbox"],
     load() {
-      return import("./mbox-D3PZXVNP.js").then((m) => legacy(m.mbox));
+      return import("./mbox-25NK3EDK.js").then((m) => legacy(m.mbox));
     }
   }),
   LanguageDescription.of({
     name: "Nginx",
     filename: /nginx.*\.conf$/i,
     load() {
-      return import("./nginx-AGVMNZO5.js").then((m) => legacy(m.nginx));
+      return import("./nginx-EPNF5XIM.js").then((m) => legacy(m.nginx));
     }
   }),
   LanguageDescription.of({
     name: "NSIS",
     extensions: ["nsh", "nsi"],
     load() {
-      return import("./nsis-SG2KGIBX.js").then((m) => legacy(m.nsis));
+      return import("./nsis-UWSKSL4B.js").then((m) => legacy(m.nsis));
     }
   }),
   LanguageDescription.of({
     name: "NTriples",
     extensions: ["nt", "nq"],
     load() {
-      return import("./ntriples-G5NGZH2J.js").then((m) => legacy(m.ntriples));
+      return import("./ntriples-7KTIX7DU.js").then((m) => legacy(m.ntriples));
     }
   }),
   LanguageDescription.of({
@@ -31322,7 +31322,7 @@ var languages = [
     alias: ["objective-c", "objc"],
     extensions: ["m"],
     load() {
-      return import("./clike-IKXGMLZR.js").then((m) => legacy(m.objectiveC));
+      return import("./clike-XP4KDUEN.js").then((m) => legacy(m.objectiveC));
     }
   }),
   LanguageDescription.of({
@@ -31330,56 +31330,56 @@ var languages = [
     alias: ["objective-c++", "objc++"],
     extensions: ["mm"],
     load() {
-      return import("./clike-IKXGMLZR.js").then((m) => legacy(m.objectiveCpp));
+      return import("./clike-XP4KDUEN.js").then((m) => legacy(m.objectiveCpp));
     }
   }),
   LanguageDescription.of({
     name: "OCaml",
     extensions: ["ml", "mli", "mll", "mly"],
     load() {
-      return import("./mllike-KPXN22HK.js").then((m) => legacy(m.oCaml));
+      return import("./mllike-DDELRCRG.js").then((m) => legacy(m.oCaml));
     }
   }),
   LanguageDescription.of({
     name: "Octave",
     extensions: ["m"],
     load() {
-      return import("./octave-FVDRLHZG.js").then((m) => legacy(m.octave));
+      return import("./octave-CNB5EED7.js").then((m) => legacy(m.octave));
     }
   }),
   LanguageDescription.of({
     name: "Oz",
     extensions: ["oz"],
     load() {
-      return import("./oz-4O3Y4FCW.js").then((m) => legacy(m.oz));
+      return import("./oz-LZY3CSVI.js").then((m) => legacy(m.oz));
     }
   }),
   LanguageDescription.of({
     name: "Pascal",
     extensions: ["p", "pas"],
     load() {
-      return import("./pascal-CHVRQHLA.js").then((m) => legacy(m.pascal));
+      return import("./pascal-AODH4463.js").then((m) => legacy(m.pascal));
     }
   }),
   LanguageDescription.of({
     name: "Perl",
     extensions: ["pl", "pm"],
     load() {
-      return import("./perl-DJZVZ7VY.js").then((m) => legacy(m.perl));
+      return import("./perl-3WJMTXPB.js").then((m) => legacy(m.perl));
     }
   }),
   LanguageDescription.of({
     name: "Pig",
     extensions: ["pig"],
     load() {
-      return import("./pig-Y4UHZGDH.js").then((m) => legacy(m.pig));
+      return import("./pig-3VQIRF6U.js").then((m) => legacy(m.pig));
     }
   }),
   LanguageDescription.of({
     name: "PowerShell",
     extensions: ["ps1", "psd1", "psm1"],
     load() {
-      return import("./powershell-5SAABQXS.js").then((m) => legacy(m.powerShell));
+      return import("./powershell-NG4I2225.js").then((m) => legacy(m.powerShell));
     }
   }),
   LanguageDescription.of({
@@ -31387,14 +31387,14 @@ var languages = [
     alias: ["ini", "properties"],
     extensions: ["properties", "ini", "in"],
     load() {
-      return import("./properties-6OTJJHOG.js").then((m) => legacy(m.properties));
+      return import("./properties-NJFJTXSM.js").then((m) => legacy(m.properties));
     }
   }),
   LanguageDescription.of({
     name: "ProtoBuf",
     extensions: ["proto"],
     load() {
-      return import("./protobuf-SJJFOCJE.js").then((m) => legacy(m.protobuf));
+      return import("./protobuf-HXV5CL6P.js").then((m) => legacy(m.protobuf));
     }
   }),
   LanguageDescription.of({
@@ -31402,21 +31402,21 @@ var languages = [
     alias: ["jade"],
     extensions: ["pug", "jade"],
     load() {
-      return import("./pug-GVBOTCZ5.js").then((m) => legacy(m.pug));
+      return import("./pug-NCGM5KUU.js").then((m) => legacy(m.pug));
     }
   }),
   LanguageDescription.of({
     name: "Puppet",
     extensions: ["pp"],
     load() {
-      return import("./puppet-KECIF7AN.js").then((m) => legacy(m.puppet));
+      return import("./puppet-GLJTQ4PT.js").then((m) => legacy(m.puppet));
     }
   }),
   LanguageDescription.of({
     name: "Q",
     extensions: ["q"],
     load() {
-      return import("./q-ZBICS6Z4.js").then((m) => legacy(m.q));
+      return import("./q-KFO2CVHG.js").then((m) => legacy(m.q));
     }
   }),
   LanguageDescription.of({
@@ -31424,20 +31424,20 @@ var languages = [
     alias: ["rscript"],
     extensions: ["r", "R"],
     load() {
-      return import("./r-QSROJKYS.js").then((m) => legacy(m.r));
+      return import("./r-MSUDAMJU.js").then((m) => legacy(m.r));
     }
   }),
   LanguageDescription.of({
     name: "RPM Changes",
     load() {
-      return import("./rpm-O4TNH7UJ.js").then((m) => legacy(m.rpmChanges));
+      return import("./rpm-55OH3RZ2.js").then((m) => legacy(m.rpmChanges));
     }
   }),
   LanguageDescription.of({
     name: "RPM Spec",
     extensions: ["spec"],
     load() {
-      return import("./rpm-O4TNH7UJ.js").then((m) => legacy(m.rpmSpec));
+      return import("./rpm-55OH3RZ2.js").then((m) => legacy(m.rpmSpec));
     }
   }),
   LanguageDescription.of({
@@ -31446,28 +31446,28 @@ var languages = [
     extensions: ["rb"],
     filename: /^(Gemfile|Rakefile)$/,
     load() {
-      return import("./ruby-L5Z4ODBX.js").then((m) => legacy(m.ruby));
+      return import("./ruby-OXZHHP7F.js").then((m) => legacy(m.ruby));
     }
   }),
   LanguageDescription.of({
     name: "SAS",
     extensions: ["sas"],
     load() {
-      return import("./sas-5AHNRDZT.js").then((m) => legacy(m.sas));
+      return import("./sas-UNHOFEA7.js").then((m) => legacy(m.sas));
     }
   }),
   LanguageDescription.of({
     name: "Scala",
     extensions: ["scala"],
     load() {
-      return import("./clike-IKXGMLZR.js").then((m) => legacy(m.scala));
+      return import("./clike-XP4KDUEN.js").then((m) => legacy(m.scala));
     }
   }),
   LanguageDescription.of({
     name: "Scheme",
     extensions: ["scm", "ss"],
     load() {
-      return import("./scheme-YGKNVXZK.js").then((m) => legacy(m.scheme));
+      return import("./scheme-N5GGLHZ6.js").then((m) => legacy(m.scheme));
     }
   }),
   LanguageDescription.of({
@@ -31476,34 +31476,34 @@ var languages = [
     extensions: ["sh", "ksh", "bash"],
     filename: /^PKGBUILD$/,
     load() {
-      return import("./shell-EPAPZGBK.js").then((m) => legacy(m.shell));
+      return import("./shell-ZLBU6O2M.js").then((m) => legacy(m.shell));
     }
   }),
   LanguageDescription.of({
     name: "Sieve",
     extensions: ["siv", "sieve"],
     load() {
-      return import("./sieve-NHQQI22L.js").then((m) => legacy(m.sieve));
+      return import("./sieve-EFKDCZCX.js").then((m) => legacy(m.sieve));
     }
   }),
   LanguageDescription.of({
     name: "Smalltalk",
     extensions: ["st"],
     load() {
-      return import("./smalltalk-LUCENIUI.js").then((m) => legacy(m.smalltalk));
+      return import("./smalltalk-TYOFH332.js").then((m) => legacy(m.smalltalk));
     }
   }),
   LanguageDescription.of({
     name: "Solr",
     load() {
-      return import("./solr-XY5263L5.js").then((m) => legacy(m.solr));
+      return import("./solr-CV6RANHW.js").then((m) => legacy(m.solr));
     }
   }),
   LanguageDescription.of({
     name: "SML",
     extensions: ["sml", "sig", "fun", "smackspec"],
     load() {
-      return import("./mllike-KPXN22HK.js").then((m) => legacy(m.sml));
+      return import("./mllike-DDELRCRG.js").then((m) => legacy(m.sml));
     }
   }),
   LanguageDescription.of({
@@ -31511,41 +31511,41 @@ var languages = [
     alias: ["sparul"],
     extensions: ["rq", "sparql"],
     load() {
-      return import("./sparql-GHEYBE7A.js").then((m) => legacy(m.sparql));
+      return import("./sparql-6KXZXBMK.js").then((m) => legacy(m.sparql));
     }
   }),
   LanguageDescription.of({
     name: "Spreadsheet",
     alias: ["excel", "formula"],
     load() {
-      return import("./spreadsheet-HK2HVAUU.js").then((m) => legacy(m.spreadsheet));
+      return import("./spreadsheet-2JINMZBH.js").then((m) => legacy(m.spreadsheet));
     }
   }),
   LanguageDescription.of({
     name: "Squirrel",
     extensions: ["nut"],
     load() {
-      return import("./clike-IKXGMLZR.js").then((m) => legacy(m.squirrel));
+      return import("./clike-XP4KDUEN.js").then((m) => legacy(m.squirrel));
     }
   }),
   LanguageDescription.of({
     name: "Stylus",
     extensions: ["styl"],
     load() {
-      return import("./stylus-LOKQ4BTV.js").then((m) => legacy(m.stylus));
+      return import("./stylus-IT7B77HI.js").then((m) => legacy(m.stylus));
     }
   }),
   LanguageDescription.of({
     name: "Swift",
     extensions: ["swift"],
     load() {
-      return import("./swift-OK7MQO7G.js").then((m) => legacy(m.swift));
+      return import("./swift-PFCZ5OI2.js").then((m) => legacy(m.swift));
     }
   }),
   LanguageDescription.of({
     name: "sTeX",
     load() {
-      return import("./stex-7L2NG2WL.js").then((m) => legacy(m.stex));
+      return import("./stex-XOOMKJRO.js").then((m) => legacy(m.stex));
     }
   }),
   LanguageDescription.of({
@@ -31553,172 +31553,172 @@ var languages = [
     alias: ["tex"],
     extensions: ["text", "ltx", "tex"],
     load() {
-      return import("./stex-7L2NG2WL.js").then((m) => legacy(m.stex));
+      return import("./stex-XOOMKJRO.js").then((m) => legacy(m.stex));
     }
   }),
   LanguageDescription.of({
     name: "SystemVerilog",
     extensions: ["v", "sv", "svh"],
     load() {
-      return import("./verilog-6PM5V3Z2.js").then((m) => legacy(m.verilog));
+      return import("./verilog-DESY7RFN.js").then((m) => legacy(m.verilog));
     }
   }),
   LanguageDescription.of({
     name: "Tcl",
     extensions: ["tcl"],
     load() {
-      return import("./tcl-GO3K32YL.js").then((m) => legacy(m.tcl));
+      return import("./tcl-ETJDKUQQ.js").then((m) => legacy(m.tcl));
     }
   }),
   LanguageDescription.of({
     name: "Textile",
     extensions: ["textile"],
     load() {
-      return import("./textile-5VXQFM3Q.js").then((m) => legacy(m.textile));
+      return import("./textile-7LR77TSV.js").then((m) => legacy(m.textile));
     }
   }),
   LanguageDescription.of({
     name: "TiddlyWiki",
     load() {
-      return import("./tiddlywiki-T7UUQSIJ.js").then((m) => legacy(m.tiddlyWiki));
+      return import("./tiddlywiki-7J3LTIOP.js").then((m) => legacy(m.tiddlyWiki));
     }
   }),
   LanguageDescription.of({
     name: "Tiki wiki",
     load() {
-      return import("./tiki-RKN6HWH7.js").then((m) => legacy(m.tiki));
+      return import("./tiki-O5QZP6MV.js").then((m) => legacy(m.tiki));
     }
   }),
   LanguageDescription.of({
     name: "TOML",
     extensions: ["toml"],
     load() {
-      return import("./toml-FWJW74AW.js").then((m) => legacy(m.toml));
+      return import("./toml-G3LDETFF.js").then((m) => legacy(m.toml));
     }
   }),
   LanguageDescription.of({
     name: "Troff",
     extensions: ["1", "2", "3", "4", "5", "6", "7", "8", "9"],
     load() {
-      return import("./troff-TO4U4PEG.js").then((m) => legacy(m.troff));
+      return import("./troff-6YATT7OT.js").then((m) => legacy(m.troff));
     }
   }),
   LanguageDescription.of({
     name: "TTCN",
     extensions: ["ttcn", "ttcn3", "ttcnpp"],
     load() {
-      return import("./ttcn-KHZOWITG.js").then((m) => legacy(m.ttcn));
+      return import("./ttcn-SBINYGCG.js").then((m) => legacy(m.ttcn));
     }
   }),
   LanguageDescription.of({
     name: "TTCN_CFG",
     extensions: ["cfg"],
     load() {
-      return import("./ttcn-cfg-CL22R3Y7.js").then((m) => legacy(m.ttcnCfg));
+      return import("./ttcn-cfg-BSBOD2S6.js").then((m) => legacy(m.ttcnCfg));
     }
   }),
   LanguageDescription.of({
     name: "Turtle",
     extensions: ["ttl"],
     load() {
-      return import("./turtle-I44RT5UV.js").then((m) => legacy(m.turtle));
+      return import("./turtle-MKHS2KCK.js").then((m) => legacy(m.turtle));
     }
   }),
   LanguageDescription.of({
     name: "Web IDL",
     extensions: ["webidl"],
     load() {
-      return import("./webidl-G4GKKUSX.js").then((m) => legacy(m.webIDL));
+      return import("./webidl-HANXJRFC.js").then((m) => legacy(m.webIDL));
     }
   }),
   LanguageDescription.of({
     name: "VB.NET",
     extensions: ["vb"],
     load() {
-      return import("./vb-TOP3K2AB.js").then((m) => legacy(m.vb));
+      return import("./vb-LSR5G4QV.js").then((m) => legacy(m.vb));
     }
   }),
   LanguageDescription.of({
     name: "VBScript",
     extensions: ["vbs"],
     load() {
-      return import("./vbscript-ILPIA7ZP.js").then((m) => legacy(m.vbScript));
+      return import("./vbscript-BUFT6HMQ.js").then((m) => legacy(m.vbScript));
     }
   }),
   LanguageDescription.of({
     name: "Velocity",
     extensions: ["vtl"],
     load() {
-      return import("./velocity-ALZ57NHX.js").then((m) => legacy(m.velocity));
+      return import("./velocity-TNNKI53F.js").then((m) => legacy(m.velocity));
     }
   }),
   LanguageDescription.of({
     name: "Verilog",
     extensions: ["v"],
     load() {
-      return import("./verilog-6PM5V3Z2.js").then((m) => legacy(m.verilog));
+      return import("./verilog-DESY7RFN.js").then((m) => legacy(m.verilog));
     }
   }),
   LanguageDescription.of({
     name: "VHDL",
     extensions: ["vhd", "vhdl"],
     load() {
-      return import("./vhdl-D73BW2XG.js").then((m) => legacy(m.vhdl));
+      return import("./vhdl-JCCZUEB3.js").then((m) => legacy(m.vhdl));
     }
   }),
   LanguageDescription.of({
     name: "XQuery",
     extensions: ["xy", "xquery"],
     load() {
-      return import("./xquery-YHL3YCHS.js").then((m) => legacy(m.xQuery));
+      return import("./xquery-SF6W2OMS.js").then((m) => legacy(m.xQuery));
     }
   }),
   LanguageDescription.of({
     name: "Yacas",
     extensions: ["ys"],
     load() {
-      return import("./yacas-RQ6W5HIS.js").then((m) => legacy(m.yacas));
+      return import("./yacas-KCGZ7INL.js").then((m) => legacy(m.yacas));
     }
   }),
   LanguageDescription.of({
     name: "Z80",
     extensions: ["z80"],
     load() {
-      return import("./z80-O4X63OO4.js").then((m) => legacy(m.z80));
+      return import("./z80-EMNKS6OB.js").then((m) => legacy(m.z80));
     }
   }),
   LanguageDescription.of({
     name: "MscGen",
     extensions: ["mscgen", "mscin", "msc"],
     load() {
-      return import("./mscgen-HQZRFHTF.js").then((m) => legacy(m.mscgen));
+      return import("./mscgen-AHIR32UH.js").then((m) => legacy(m.mscgen));
     }
   }),
   LanguageDescription.of({
     name: "Xù",
     extensions: ["xu"],
     load() {
-      return import("./mscgen-HQZRFHTF.js").then((m) => legacy(m.xu));
+      return import("./mscgen-AHIR32UH.js").then((m) => legacy(m.xu));
     }
   }),
   LanguageDescription.of({
     name: "MsGenny",
     extensions: ["msgenny"],
     load() {
-      return import("./mscgen-HQZRFHTF.js").then((m) => legacy(m.msgenny));
+      return import("./mscgen-AHIR32UH.js").then((m) => legacy(m.msgenny));
     }
   }),
   LanguageDescription.of({
     name: "Vue",
     extensions: ["vue"],
     load() {
-      return import("./dist-YZXL32KO.js").then((m) => m.vue());
+      return import("./dist-CT6H2GPZ.js").then((m) => m.vue());
     }
   }),
   LanguageDescription.of({
     name: "Angular Template",
     load() {
-      return import("./dist-VY4N225Z.js").then((m) => m.angular());
+      return import("./dist-OSBT5UEK.js").then((m) => m.angular());
     }
   })
 ];

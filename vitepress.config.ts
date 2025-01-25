@@ -5,7 +5,7 @@ const defaultConfig = {
     defaultAuther: 'qiangcan',
     blogTitle: 'CAN BLOG',
     blogDescription: 'can blog',
-    blogLogo: '/logo.png',   
+    blogLogo: '/logo/logo.png',   
     base: '/can-vitepress-blog' 
 };
 
