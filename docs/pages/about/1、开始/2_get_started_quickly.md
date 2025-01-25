@@ -18,10 +18,10 @@
 - [pnpm](https://pnpm.io/zh/)
 ::: code-group
 ```bash [https]
-git clone https://gitee.com/qq2057187934/can-blog.git
+git clone https://github.com/2030378835/can-vitepress-blog-user.git
 ```
 ```bash [ssh]
-git clone git@gitee.com:qq2057187934/can-blog.git
+git clone git@github.com:2030378835/can-vitepress-blog-user.git
 ```
 :::
 ### 默认配置
