@@ -123,3 +123,10 @@ p {
   -webkit-mask-image: var(--icon);
   mask-image: var(--icon);
 }
+
+.ant-table-cell-row-hover, ant-table-cell {
+  background-color: var(--vp-bg-card) !important;
+}
+.ant-table-wrapper .ant-table-thead >tr>th {
+  background-color: var(--vp-bg-card) !important;
+}

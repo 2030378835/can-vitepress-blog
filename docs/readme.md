@@ -102,12 +102,14 @@ can-blog 是一个基于 vitepress + antdv 的博客系统，基于 can-blog 开
 - <div class="listItem"><Checkbox v-model:checked="checked" />图片预览</div>
 - <div class="listItem"><Checkbox v-model:checked="checked" />antdv主题色快捷更换</div>
 - <div class="listItem"><Checkbox v-model:checked="checked" />导航栏组件封装</div>
+- <div class="listItem"><Checkbox v-model:checked="checked" />全局通知组件封装</div>
+
 
 ### 3.2 待上线功能
 - <div class="listItem"><Progress :percent="100"/> 首页文章列表优化</div>
+- <div class="listItem"><Progress :percent="100"/> 动态文章配置文件输出</div>
 - <div class="listItem"><Progress :percent="90"/> 代码结构优化</div>
 - <div class="listItem"><Progress :percent="60"/> 文章布局优化</div>
-- <div class="listItem"><Progress :percent="60"/> 动态文章配置文件输出</div>
 - <div class="listItem"><Progress :percent="20"/> Hooks开发</div>
 - <div class="listItem"><Progress :percent="10"/> 标签转图片为文章封面图</div>
 - <div class="listItem"><Progress :percent="10"/> 博客概览信息（文章数，网站运行天数，字数，访问量等等）</div>

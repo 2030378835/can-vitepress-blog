@@ -32,6 +32,7 @@
         },
         Table: {
           // colorBgContainer: 'var(--table-bg-container)'
+          colorFillSecondary: 'var(--color-bg-container)'
         }
       },
     }"
