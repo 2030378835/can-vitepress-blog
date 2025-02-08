@@ -16,7 +16,7 @@
         />
       </a>
       <template #overlay>
-        <Menu style="background: var(--vp-c-bg-elv); padding: 12px;">
+        <Menu style="background: var(--vp-c-bg-elv); padding: 12px; border-radius: 12px;">
           <DropdownItem v-for="item in configs.items" :key="item.title" :config="item"  />
         </Menu>
       </template>

@@ -95,16 +95,66 @@
 </template>
 
 <script setup>
-import { computed } from 'vue'
+import { computed, onMounted, createApp, h } from 'vue'
 import Giscus from "@giscus/vue";
 import DefaultTheme from "vitepress/theme";
 import { Image, ConfigProvider, Avatar, Tooltip } from 'ant-design-vue'
 import { useData } from "vitepress";
 import defaultConfigES from '../../../../vitepress.config.ES.ts'
+
+import RootAction from '../components/rootAction/index.vue'
+
 const { Layout } = DefaultTheme;
 const { isDark, page } = useData();
 
 const articleData = computed(() => {
   return page.value.frontmatter
+})
+
+onMounted(() => {
+  console.log(document.getElementsByClassName('VPNav')[0], 'VPNav')
+  const VPNav = document.getElementsByClassName('VPNav')[0]
+
+  // 创建子组件实例
+  // 创建子组件实例并传递 props
+  const childApp = createApp({
+    render() {
+      return h(RootAction, {
+        // 传递 props
+        // title: 'WELCOME',
+        // desc: '欢迎来到 can-vitepress-blog 使用文档',
+        // style: {
+        //   justifyContent: 'center',
+        // }
+        actions: [
+          {
+            title: 'WELCOME',
+            desc: '欢迎来到 can-vitepress-blog 使用文档',
+            style: {
+              justifyContent: 'center',
+            },
+            closable: true,
+          },
+          // {
+          //   title: 'BAIDU',
+          //   desc: '百度一下, 你就知道',
+          //   style: {
+          //     justifyContent: 'center',
+          //   },
+          //   closable: true,
+          // }
+        ]
+      });
+    }
+  });
+  // 创建一个临时的 div 作为挂载点
+  const tempDiv = document.createElement('div');
+  // 获取 VPNav 的第一个子元素
+  const firstChild = VPNav.firstChild;
+  // VPNav.appendChild(tempDiv);
+  // 将临时的 div 插入到 VPNav 的第一个子元素前
+  VPNav.insertBefore(tempDiv, firstChild);
+
+  childApp.mount(tempDiv);
 })
 </script>

@@ -1,4 +1,4 @@
-import "./chunk-G3PMV62Z.js";
+import "./chunk-WOOG5QLI.js";
 
 // node_modules/.pnpm/@giscus+vue@3.1.1_vue@3.5.13/node_modules/@giscus/vue/dist/giscus-Ci9LqPcC.js
 var H = globalThis;
@@ -967,4 +967,4 @@ export {
    * SPDX-License-Identifier: BSD-3-Clause
    *)
 */
-//# sourceMappingURL=giscus-Ci9LqPcC-PEBGNCWQ.js.map
+//# sourceMappingURL=giscus-Ci9LqPcC-6GSLMNYO.js.map

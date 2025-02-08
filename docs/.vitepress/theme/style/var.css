@@ -23,6 +23,7 @@
   --color-bg-elevated: #fff;
   --table-bg-container: #fff;
   --dropdown-bg-hover-colot: #f3f3f3;
+  --root-action-bg-color: linear-gradient(to right, var(--vp-c-brand-1), #951bff);
 }
 
 .dark {
@@ -49,6 +50,7 @@
   --color-bg-elevated: #1a1a1a;
   --table-bg-container: #1a1a1a;
   --dropdown-bg-hover-colot: #383838af;
+  --root-action-bg-color: linear-gradient(to right, #0f007c, #50007a);
 }
 /* 以前的vp-c-brand已弃用 */
 
