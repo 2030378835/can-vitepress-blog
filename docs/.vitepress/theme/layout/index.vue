@@ -31,7 +31,6 @@
           colorBgContainer: 'var(--color-bg-container)'
         },
         Table: {
-          // colorBgContainer: 'var(--table-bg-container)'
           colorFillSecondary: 'var(--color-bg-container)'
         }
       },
@@ -61,15 +60,6 @@
           </Tooltip>
         </div>
 
-        <!-- <Image
-          v-if="page.frontmatter.cover"
-          :src="page.frontmatter.cover"
-          style=" 
-            height: 240px;
-            width: 688px;
-            object-fit: cover
-          "
-        /> -->
       </template>
       <template #doc-after>
         <div style="margin-top: 24px">
@@ -121,12 +111,6 @@ onMounted(() => {
   const childApp = createApp({
     render() {
       return h(RootAction, {
-        // 传递 props
-        // title: 'WELCOME',
-        // desc: '欢迎来到 can-vitepress-blog 使用文档',
-        // style: {
-        //   justifyContent: 'center',
-        // }
         actions: [
           {
             title: 'WELCOME',
@@ -136,14 +120,6 @@ onMounted(() => {
             },
             closable: true,
           },
-          // {
-          //   title: 'BAIDU',
-          //   desc: '百度一下, 你就知道',
-          //   style: {
-          //     justifyContent: 'center',
-          //   },
-          //   closable: true,
-          // }
         ]
       });
     }
