@@ -1,11 +1,11 @@
 import {
   html
-} from "./chunk-H7BPK76W.js";
-import "./chunk-RPXURU2U.js";
+} from "./chunk-UXLNL34A.js";
 import {
   javascriptLanguage
 } from "./chunk-WSVGI6ZT.js";
 import "./chunk-4EXID5FW.js";
+import "./chunk-RPXURU2U.js";
 import {
   ExternalTokenizer,
   LRLanguage,
@@ -136,4 +136,4 @@ export {
   angular,
   angularLanguage
 };
-//# sourceMappingURL=dist-OSBT5UEK.js.map
+//# sourceMappingURL=dist-YOD6PJVG.js.map

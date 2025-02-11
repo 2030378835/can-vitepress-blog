@@ -1,9 +1,9 @@
 import {
   html
-} from "./chunk-H7BPK76W.js";
-import "./chunk-RPXURU2U.js";
+} from "./chunk-UXLNL34A.js";
 import "./chunk-WSVGI6ZT.js";
 import "./chunk-4EXID5FW.js";
+import "./chunk-RPXURU2U.js";
 import {
   EditorSelection,
   EditorView,
@@ -315,4 +315,4 @@ export {
   liquidCompletionSource,
   liquidLanguage
 };
-//# sourceMappingURL=dist-Z42GVE7L.js.map
+//# sourceMappingURL=dist-4HMNZW7M.js.map

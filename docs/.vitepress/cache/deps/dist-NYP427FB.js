@@ -1,9 +1,9 @@
 import {
   html
-} from "./chunk-H7BPK76W.js";
-import "./chunk-RPXURU2U.js";
+} from "./chunk-UXLNL34A.js";
 import "./chunk-WSVGI6ZT.js";
 import "./chunk-4EXID5FW.js";
+import "./chunk-RPXURU2U.js";
 import {
   ExternalTokenizer,
   LRLanguage,
@@ -417,4 +417,4 @@ export {
   php,
   phpLanguage
 };
-//# sourceMappingURL=dist-PUZPCE57.js.map
+//# sourceMappingURL=dist-NYP427FB.js.map

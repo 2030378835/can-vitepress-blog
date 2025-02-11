@@ -1,8 +1,7 @@
 import {
   markdown
-} from "./chunk-STX76DR3.js";
-import "./chunk-H7BPK76W.js";
-import "./chunk-RPXURU2U.js";
+} from "./chunk-3GA3I3DI.js";
+import "./chunk-UXLNL34A.js";
 import "./chunk-WSVGI6ZT.js";
 import {
   autocompletion,
@@ -10,6 +9,7 @@ import {
   closeBracketsKeymap,
   completionKeymap
 } from "./chunk-4EXID5FW.js";
+import "./chunk-RPXURU2U.js";
 import {
   Annotation,
   ChangeDesc,
@@ -30747,7 +30747,7 @@ var languages = [
     alias: ["xhtml"],
     extensions: ["html", "htm", "handlebars", "hbs"],
     load() {
-      return import("./dist-GOFGTP6R.js").then((m) => m.html());
+      return import("./dist-DSQUKMOM.js").then((m) => m.html());
     }
   }),
   LanguageDescription.of({
@@ -30791,7 +30791,7 @@ var languages = [
     name: "Liquid",
     extensions: ["liquid"],
     load() {
-      return import("./dist-Z42GVE7L.js").then((m) => m.liquid());
+      return import("./dist-4HMNZW7M.js").then((m) => m.liquid());
     }
   }),
   LanguageDescription.of({
@@ -30804,7 +30804,7 @@ var languages = [
     name: "Markdown",
     extensions: ["md", "markdown", "mkd"],
     load() {
-      return import("./dist-C73YL3Q2.js").then((m) => m.markdown());
+      return import("./dist-KI4BCKFQ.js").then((m) => m.markdown());
     }
   }),
   LanguageDescription.of({
@@ -30823,7 +30823,7 @@ var languages = [
     name: "PHP",
     extensions: ["php", "php3", "php4", "php5", "php7", "phtml"],
     load() {
-      return import("./dist-PUZPCE57.js").then((m) => m.php());
+      return import("./dist-NYP427FB.js").then((m) => m.php());
     }
   }),
   LanguageDescription.of({
@@ -31712,13 +31712,13 @@ var languages = [
     name: "Vue",
     extensions: ["vue"],
     load() {
-      return import("./dist-CT6H2GPZ.js").then((m) => m.vue());
+      return import("./dist-TV4YP7GS.js").then((m) => m.vue());
     }
   }),
   LanguageDescription.of({
     name: "Angular Template",
     load() {
-      return import("./dist-OSBT5UEK.js").then((m) => m.angular());
+      return import("./dist-YOD6PJVG.js").then((m) => m.angular());
     }
   })
 ];

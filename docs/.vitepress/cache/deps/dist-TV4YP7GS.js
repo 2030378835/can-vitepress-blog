@@ -1,11 +1,11 @@
 import {
   html
-} from "./chunk-H7BPK76W.js";
-import "./chunk-RPXURU2U.js";
+} from "./chunk-UXLNL34A.js";
 import {
   javascriptLanguage
 } from "./chunk-WSVGI6ZT.js";
 import "./chunk-4EXID5FW.js";
+import "./chunk-RPXURU2U.js";
 import {
   LRLanguage,
   LRParser,
@@ -96,4 +96,4 @@ export {
   vue,
   vueLanguage
 };
-//# sourceMappingURL=dist-CT6H2GPZ.js.map
+//# sourceMappingURL=dist-TV4YP7GS.js.map

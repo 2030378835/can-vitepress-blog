@@ -1,7 +1,7 @@
 import {
   html,
   htmlCompletionSource
-} from "./chunk-H7BPK76W.js";
+} from "./chunk-UXLNL34A.js";
 import {
   CompletionContext
 } from "./chunk-4EXID5FW.js";
@@ -2366,4 +2366,4 @@ export {
   markdownKeymap,
   markdown
 };
-//# sourceMappingURL=chunk-STX76DR3.js.map
+//# sourceMappingURL=chunk-3GA3I3DI.js.map

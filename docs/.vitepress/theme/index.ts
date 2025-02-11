@@ -7,6 +7,7 @@ import DefaultTheme from "vitepress/theme";
 import Template from './template/index.vue'
 import MusicTemplate from './template/music.vue'
 import HomeTemplate from './template/home.vue'
+import CommitTemplate from './template/commit.vue'
 
 // 公共组件
 import DropdownItem from './components/dropdownItem/index.vue';
@@ -32,6 +33,7 @@ export default {
     app.component('Template', Template)
     app.component('HomeTemplate', HomeTemplate)
     app.component('MusicTemplate', MusicTemplate)
+    app.component('CommitTemplate', CommitTemplate)
   },
   Layout: MyLayout
 };

@@ -24,6 +24,7 @@
   --table-bg-container: #fff;
   --dropdown-bg-hover-colot: #f3f3f3;
   --root-action-bg-color: linear-gradient(to right, var(--vp-c-brand-1), #951bff);
+  --commit-item-border-color: #cecece;
 }
 
 .dark {
@@ -51,6 +52,7 @@
   --table-bg-container: #1a1a1a;
   --dropdown-bg-hover-colot: #383838af;
   --root-action-bg-color: linear-gradient(to right, #0f007c, #50007a);
+  --commit-item-border-color: #4f4f4f69;
 }
 /* 以前的vp-c-brand已弃用 */
 
