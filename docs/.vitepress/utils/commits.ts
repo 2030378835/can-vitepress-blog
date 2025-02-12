@@ -12,19 +12,15 @@ export const getCommits = async () => {
 
     const commits = response.data;
     return commits.map(commit => ({
-      // console.log(commit);
-      // console.log(`URL: ${commit.html_url}`);
-      // console.log(`SHA: ${commit.sha}`);
-      // console.log(`Author: ${commit.commit.author.name}`);
-      // console.log(`Date: ${commit.commit.author.date}`);
-      // console.log(`Message: ${commit.commit.message}`);
-      // console.log('---');
+
       url: commit.html_url,
       sha: commit.sha,
       author: commit.commit.author.name,
       date: commit.commit.author.date,
       message: commit.commit.message,
-      verification: commit.commit.verification
+      verification: commit.commit.verification,
+      committer: commit.commit.committer,
+      avatar_url: commit.author?.avatar_url,
     }));
   } catch (error) {
     console.error('Error fetching commits:', error.response ? error.response.data : error.message);

@@ -36,6 +36,17 @@ const vitePressOptions = {
         props: {
           config: {
             isNew: true,
+            title: 'Commits',
+            path: '/commit',
+            style: {background: 'rgba(0,0,0,0)'}
+          }
+        }
+      },
+      {
+        component: 'DropdownItem',
+        props: {
+          config: {
+            isNew: true,
             title: 'About',
             path: '/readme',
             style: {background: 'rgba(0,0,0,0)'}

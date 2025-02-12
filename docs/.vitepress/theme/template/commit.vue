@@ -1,17 +1,30 @@
 <template>
-  <div class="commits">
+  <div v-if="!loading" class="commits">
+    <span style="font-size: larger; font-weight: 600;">Commits</span>
+    <!-- <Divider style="background-color: var(--vp-c-brand-1);" /> -->
+    <div class="divider"></div>
     <Timeline>
-        <TimelineItem v-for="(i,key,index) in commits" :key="key">
-          <span>Commits on {{key}}</span>
-          <div class="commits-item-box">
-            <div v-for="(commit,index) in i" :key="index">
-              <div class="title">{{ commit.message }}</div>
-              <div class="commitor">{{ commit.author }} committed {{ getTimePassed(commit.date) }} ago</div>
+      <TimelineItem v-for="(i,key,index) in commits" :key="key">
+        <span>Commits on {{key}}</span>
+        <div class="commits-item-box">
+          <div v-for="(commit,index) in i" :key="index">
+            <div>
+              <div class="title">
+                <a :href="commit.url" target="_blank" rel="noopener noreferrer">{{ commit.message }}</a>
+              </div>
+              <div class="commitor">
+                <img v-if="!commit.avatar_url" src="https://github.githubassets.com/images/gravatars/gravatar-user-420.png?size=32" />
+                <img v-else :src="commit.avatar_url" /> 
+                {{ commit.author }} committed {{ getTimePassed(commit.date) }} ago
+              </div>
             </div>
+            <span v-if="commit.verification?.verified">verified</span>
           </div>
-        </TimelineItem>
+        </div>
+      </TimelineItem>
     </Timeline>
   </div>
+  <div style="text-align: center; height: 300px; line-height: 300px;" v-else>Loading...</div>
 </template>
 
 <script setup>
@@ -110,16 +123,28 @@ onMounted(async () => {
 
 <style lang="scss" scoped>
 .commits {
-  padding: 50px 20%;
+  padding: 50px 10%;
   .commits-item-box {
     display: flex;
     flex-direction: column;
     border: 1px solid var(--commit-item-border-color);
     border-radius: 6px;
     overflow: hidden;
+    margin-top: 10px;
     >div {
-      padding: 10px;
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
       border-bottom: 1px solid var(--commit-item-border-color);
+      span {
+        font-size: 12px;
+        color: rgb(33, 189, 33);
+        background-color: rgba(22, 175, 22, 0.184);
+        padding: 2px 10px;
+        border-radius: 12px;
+        transform: scale(0.8);
+      }
     }
     >div:last-child {
       border-bottom: none;
@@ -128,12 +153,31 @@ onMounted(async () => {
       font-size: 16px;
       font-weight: 600;
       color: var(--vp-c-text-1);
+      a:hover {
+        color: var( --vp-c-brand-1);
+        text-decoration: underline;
+      }
     }
     .commitor {
       font-size: 12px;
       color: var(--vp-c-text-2);
-      // color: var(--commit-item-commitor-color);
+      display: flex;
+      align-items: center;
+      img {
+        width: 14px;
+        height: 14px;
+        margin-right: 4px;
+        border-radius: 50%;
+      }
     }
+  }
+  .divider {
+    background-color: var(--commit-item-border-color);
+    height: 1px;
+    width: 100%;
+    margin: 20px 0;
+    border-radius: 1px;
+    margin-bottom: 30px;
   }
 }
 </style>
