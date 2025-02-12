@@ -90,7 +90,7 @@ import { computed, onMounted, createApp, h } from 'vue'
 import Giscus from "@giscus/vue";
 import DefaultTheme from "vitepress/theme";
 import { Image, ConfigProvider, Avatar, Tooltip } from 'ant-design-vue'
-import { useData } from "vitepress";
+import { useData, withBase } from "vitepress";
 import defaultConfigES from '../../../../vitepress.config.ES.ts'
 
 import RootAction from '../components/rootAction/index.vue'
@@ -115,6 +115,15 @@ onMounted(() => {
           {
             title: 'WELCOME',
             desc: '欢迎来到 can-vitepress-blog 使用文档',
+            style: {
+              justifyContent: 'center',
+            },
+            closable: true,
+          },
+          {
+            title: '新功能！！！',
+            desc: '文档支持查看代码提交的记录啦，点击进入Commits页面吧',
+            link: withBase('/commit'),
             style: {
               justifyContent: 'center',
             },
