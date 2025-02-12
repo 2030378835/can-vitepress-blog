@@ -4,7 +4,7 @@
       <a class="ant-dropdown-link" @click.prevent>
         <DropdownItem :config="{
           title: configs.title,
-          isNew: configs.isNew,
+          isNew: configs.isNew || configs.items.some(item => item.isNew),
           isTab: true,
         }" 
         style="
@@ -37,7 +37,6 @@ interface Config {
 }
 
 interface Configs extends Config {
-  isLink?: boolean;
   link?: string;
   path?: string;
 }
@@ -78,4 +77,3 @@ div, a, span {
   font-family: var(--vp-font-family-base);
 }
 </style>
-

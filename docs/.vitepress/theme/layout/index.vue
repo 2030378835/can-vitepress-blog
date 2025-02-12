@@ -86,24 +86,30 @@
 </template>
 
 <script setup>
-import { computed, onMounted, createApp, h } from 'vue'
+import { computed, onMounted, createApp, h, watch } from 'vue'
 import Giscus from "@giscus/vue";
 import DefaultTheme from "vitepress/theme";
+import { useSidebar } from 'vitepress/theme'
 import { Image, ConfigProvider, Avatar, Tooltip } from 'ant-design-vue'
-import { useData, withBase } from "vitepress";
+import { useData, withBase, useRoute } from "vitepress";
 import defaultConfigES from '../../../../vitepress.config.ES.ts'
 
 import RootAction from '../components/rootAction/index.vue'
 
 const { Layout } = DefaultTheme;
 const { isDark, page } = useData();
+const sidebar = useSidebar()  
+const route = useRoute()
 
 const articleData = computed(() => {
   return page.value.frontmatter
 })
 
+watch(() => route.path, (newV, oldV) => {
+  console.log(newV, oldV,'sidebar')
+})
+
 onMounted(() => {
-  console.log(document.getElementsByClassName('VPNav')[0], 'VPNav')
   const VPNav = document.getElementsByClassName('VPNav')[0]
 
   // 创建子组件实例

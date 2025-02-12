@@ -31,28 +31,6 @@ const vitePressOptions = {
           }
         }
       },
-      {
-        component: 'DropdownItem',
-        props: {
-          config: {
-            isNew: true,
-            title: 'Commits',
-            path: '/commit',
-            style: {background: 'rgba(0,0,0,0)'}
-          }
-        }
-      },
-      {
-        component: 'DropdownItem',
-        props: {
-          config: {
-            isNew: true,
-            title: 'About',
-            path: '/readme',
-            style: {background: 'rgba(0,0,0,0)'}
-          }
-        }
-      },
       // {
       //   component: 'Dropdown',
       //   props: {
@@ -69,18 +47,35 @@ const vitePressOptions = {
         props: {
           configs: {
             title: '作品集',
-            isNew: true,
             items: [
               {
-                isLink: true,
                 title: 'can-cli（未发布）',
                 link: 'https://gitee.com/qq2057187934/can-cli',
               },
               {
                 isNew: true,
-                isLink: true,
                 title: 'can-vitepress-blog',
                 link: 'https://github.com/2030378835/can-vitepress-blog'
+              }
+            ]
+          }
+        }
+      },
+      {
+        component: 'Dropdown',
+        props: {
+          configs: {
+            title: '更多',
+            // isNew: true,
+            items: [
+              {
+                title: 'About',
+                path: '/readme',
+              },
+              {
+                isNew: true,
+                title: 'Commits',
+                path: '/commit'
               }
             ]
           }

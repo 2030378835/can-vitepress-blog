@@ -5,7 +5,7 @@
         :style="{color: active || isActive ? 'var(--vp-c-brand-1)': ''}" 
         :class="[
           props.config.isTab ? 'title' : 'text', 
-          props.config.isLink ? 'vp-external-link-icon':null
+          props.config.link ? 'vp-external-link-icon':null
         ]" 
         @click="goToLink"
         target="_blank"
@@ -38,7 +38,6 @@ const props = defineProps({
     type: Object,
     default: () => ({
       isNew: false,
-      isLink: false,
       title: '',
       link: '',
       path: '',

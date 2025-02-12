@@ -108,6 +108,7 @@ can-blog 是一个基于 vitepress + antdv 的博客系统，基于 can-blog 开
 ### 3.2 待上线功能
 - <div class="listItem"><Progress :percent="100"/> 首页文章列表优化</div>
 - <div class="listItem"><Progress :percent="100"/> 动态文章配置文件输出</div>
+- <div class="listItem"><Progress :percent="100"/> Commits提交记录展示</div>
 - <div class="listItem"><Progress :percent="90"/> 代码结构优化</div>
 - <div class="listItem"><Progress :percent="60"/> 文章布局优化</div>
 - <div class="listItem"><Progress :percent="20"/> Hooks开发</div>
