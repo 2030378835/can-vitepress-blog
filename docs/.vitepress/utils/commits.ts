@@ -15,11 +15,11 @@ export const getCommits = async () => {
 
       url: commit.html_url,
       sha: commit.sha,
-      author: commit.commit.author.name,
+      commit_author: commit.commit.author.name,
       date: commit.commit.author.date,
       message: commit.commit.message,
       verification: commit.commit.verification,
-      committer: commit.commit.committer,
+      author: commit.author,
       avatar_url: commit.author?.avatar_url,
     }));
   } catch (error) {

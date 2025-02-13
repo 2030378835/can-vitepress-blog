@@ -14,8 +14,12 @@
               </div>
               <div class="commitor">
                 <img v-if="!commit.avatar_url" src="https://github.githubassets.com/images/gravatars/gravatar-user-420.png?size=32" />
-                <img v-else :src="commit.avatar_url" /> 
-                {{ commit.author }} committed {{ getTimePassed(commit.date) }} ago
+                <img v-else :src="commit.avatar_url" />
+                <span v-if="commit.author">
+                  <a class="anthor" target="_blank" rel="noopener noreferrer" :href="commit.author.html_url">{{ commit.author.login }}</a>
+                  {{ ' anthored ' + getTimePassed(commit.date) + ' ago'}}
+                </span>
+                <span v-else>{{ commit.commit_author+ ' commited ' + getTimePassed(commit.date) + ' ago'}}</span>
               </div>
             </div>
             <span v-if="commit.verification?.verified">verified</span>
@@ -137,13 +141,14 @@ onMounted(async () => {
       align-items: center;
       justify-content: space-between;
       border-bottom: 1px solid var(--commit-item-border-color);
-      span {
+      >span {
         font-size: 12px;
         color: rgb(33, 189, 33);
-        background-color: rgba(22, 175, 22, 0.184);
+        background-color: rgba(22, 175, 22, 0.05);
         padding: 2px 10px;
         border-radius: 12px;
         transform: scale(0.8);
+        border: 1px solid rgb(33, 189, 33);
       }
     }
     >div:last-child {
@@ -153,7 +158,7 @@ onMounted(async () => {
       font-size: 16px;
       font-weight: 600;
       color: var(--vp-c-text-1);
-      a:hover {
+      a:hover, .anthor:hover {
         color: var( --vp-c-brand-1);
         text-decoration: underline;
       }
@@ -168,6 +173,10 @@ onMounted(async () => {
         height: 14px;
         margin-right: 4px;
         border-radius: 50%;
+      }
+      .anthor:hover {
+        color: var( --vp-c-brand-1);
+        text-decoration: underline;
       }
     }
   }
