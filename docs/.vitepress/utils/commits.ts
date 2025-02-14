@@ -21,6 +21,7 @@ export const getCommits = async () => {
       verification: commit.commit.verification,
       author: commit.author,
       avatar_url: commit.author?.avatar_url,
+      parents: commit.parents
     }));
   } catch (error) {
     console.error('Error fetching commits:', error.response ? error.response.data : error.message);
