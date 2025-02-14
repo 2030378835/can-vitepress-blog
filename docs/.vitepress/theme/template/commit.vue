@@ -22,7 +22,12 @@
                 <span v-else>{{ commit.commit_author+ ' commited ' + getTimePassed(commit.date) + ' ago'}}</span>
               </div>
             </div>
-            <span v-if="commit.verification?.verified">verified</span>
+            <div>
+              <span v-if="commit.verification?.verified">verified</span>
+              <div>
+                <a :href="commit.parents[0]?.html_url" style="font-size: 14px;">{{ `</>` }}</a>
+              </div>
+            </div>
           </div>
         </div>
       </TimelineItem>
@@ -35,6 +40,7 @@
 import { ref, onMounted } from 'vue'
 import { getCommits } from '../../utils/commits'
 import { Timeline, TimelineItem, Avatar, Tooltip } from 'ant-design-vue'
+import { CodeOutlined } from  '@ant-design/icons-vue'
 
 const commits = ref([])
 const loading = ref(false)
@@ -141,14 +147,27 @@ onMounted(async () => {
       align-items: center;
       justify-content: space-between;
       border-bottom: 1px solid var(--commit-item-border-color);
-      >span {
-        font-size: 12px;
-        color: rgb(33, 189, 33);
-        background-color: rgba(22, 175, 22, 0.05);
-        padding: 2px 10px;
-        border-radius: 12px;
-        transform: scale(0.8);
-        border: 1px solid rgb(33, 189, 33);
+      >div:nth-child(2) {
+        display:flex;
+        >div {
+          display: flex;
+          align-items: center;
+          a {
+            display: flex;
+            align-items: center;
+            color: var(--vp-c-text-2);
+            margin-left: 10px;
+          }
+        }
+        >span {
+          font-size: 12px;
+          color: rgb(33, 189, 33);
+          background-color: rgba(22, 175, 22, 0.05);
+          padding: 2px 8px;
+          border-radius: 12px;
+          transform: scale(0.8);
+          border: 1px solid rgb(33, 189, 33);
+        }
       }
     }
     >div:last-child {
