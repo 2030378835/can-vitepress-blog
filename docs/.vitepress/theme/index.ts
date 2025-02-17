@@ -4,7 +4,7 @@ import 'ant-design-vue/dist/reset.css';
 import VueCalendarHeatmap from 'vue3-calendar-heatmap'
 import 'vue3-calendar-heatmap/dist/style.css'
 import DefaultTheme from "vitepress/theme";
-import Template from './template/index.vue'
+import IndexTemplate from './template/index.vue'
 import MusicTemplate from './template/music.vue'
 import HomeTemplate from './template/home.vue'
 import CommitTemplate from './template/commit.vue'
@@ -30,7 +30,7 @@ export default {
     app.component('Dropdown', Dropdown)
 
     app.component('Image', Image)
-    app.component('Template', Template)
+    app.component('IndexTemplate', IndexTemplate)
     app.component('HomeTemplate', HomeTemplate)
     app.component('MusicTemplate', MusicTemplate)
     app.component('CommitTemplate', CommitTemplate)
