@@ -29,7 +29,7 @@
   @media (min-width: 960px) {
     /* 文档页导航中间 */
     .VPNavBar:not(.home.top) .content-body {
-      background-color: rgba(255, 255, 255, 0);
+      background-color: rgba(158, 158, 158, 0);
       backdrop-filter: blur(10px);
     }
 
@@ -45,13 +45,13 @@
   @media (min-width: 960px) {
     /* 文档页分割线 */
     .VPNavBar:not(.home.top) .divider-line {
-      background-color: rgba(255, 255, 255, 0);
+      /* background-color: rgba(255, 255, 255, 0.106); */
       backdrop-filter: blur(10px);
     }
 
     /* 首页分割线 */
     .VPNavBar:not(.has-sidebar):not(.home.top) .divider {
-      background-color: rgba(255, 255, 255, 0);
+      /* background-color: rgba(255, 255, 255, 0.106); */
       backdrop-filter: blur(10px);
     }
   }
