@@ -9,7 +9,7 @@
   import defaultConfigES from '../../../../vitepress.config.ES.ts'
 </script>
 
-> [!TIP] ⚠️ 您正在阅读CAN BLOG使用文档！
+> [!TIP] ⚠️ 您正在阅读can-vitepress-blog使用文档！
 > 有任何不懂的地方可在下方留言区进行交流
 
 ## 什么是CAN BLOG
