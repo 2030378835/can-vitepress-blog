@@ -54,7 +54,6 @@
   items: [1,2,3].map(i => (
     {
       isNew: false,
-      isLink: false,
       title: 'Item'+i,
       path: 'Item'+i,
       style: {},
@@ -73,7 +72,6 @@
     items: [1,2,3].map(i => (
       {
         isNew: false,
-        isLink: false,
         title: 'Item'+i,
         path: 'Item'+i,
         style: {},
@@ -161,12 +159,11 @@
 
 ## 链接类型
 
-设置`items`的每一项`config`的`isLink为true`，并设置`link`
+设置`items`的每一项`config`的`link`即可自动使用链接类型
 <Dropdown :configs="{
   title: 'DROPDOWN',
   items: [1,2,3].map(i => (
     {
-      isLink: true,
       title: 'Item'+i,
       link: 'https://vitepress.dev/zh/reference/default-theme-sidebar#usesidebar',
       style: {},
@@ -181,7 +178,6 @@
     title: 'DROPDOWN',
     items: [1,2,3].map(i => (
       {
-        isLink: true,
         title: 'Item'+i,
         link: 'https://vitepress.dev/zh/reference/default-theme-sidebar#usesidebar',
         style: {},
@@ -206,7 +202,6 @@ interface Config {
 }
 
 interface Configs extends Config {
-  isLink?: boolean;
   link?: string;
   path?: string;
 }
@@ -228,7 +223,6 @@ const props = defineProps({
     type: Object,
     default: () => ({
       isNew: false,
-      isLink: false,
       title: '',
       link: '',
       path: '',
