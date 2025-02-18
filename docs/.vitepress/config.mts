@@ -122,6 +122,10 @@ const vitePressOptions = {
       level: [2, 6],
       label: '页面导航'
     },
+    editLink: {
+      pattern: 'https://github.com/2030378835/can-vitepress-blog/edit/main/docs/:path',
+      text: '在GitHub上编辑此页面'
+    }
   },
   vite: {
     css: {
