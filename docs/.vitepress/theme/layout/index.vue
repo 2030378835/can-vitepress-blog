@@ -89,16 +89,18 @@
 import { computed, onMounted, createApp, h, watch } from 'vue'
 import Giscus from "@giscus/vue";
 import DefaultTheme from "vitepress/theme";
-import { useSidebar } from 'vitepress/theme'
+// import { useSidebar } from 'vitepress/theme'
 import { Image, ConfigProvider, Avatar, Tooltip } from 'ant-design-vue'
 import { useData, withBase, useRoute } from "vitepress";
 import defaultConfigES from '../../../../vitepress.config.ES.ts'
+
+// import {getContributors} from '../../utils/commitor.ts'
 
 import RootAction from '../components/rootAction/index.vue'
 
 const { Layout } = DefaultTheme;
 const { isDark, page } = useData();
-const sidebar = useSidebar()  
+// const sidebar = useSidebar()  
 const route = useRoute()
 
 const articleData = computed(() => {
@@ -107,6 +109,9 @@ const articleData = computed(() => {
 
 watch(() => route.path, (newV, oldV) => {
   console.log(newV, oldV,'sidebar')
+  //  getContributors(newV.replace(defaultConfigES.base,'')).then(res => {
+  //   console.log(res)
+  //  })
 })
 
 onMounted(() => {

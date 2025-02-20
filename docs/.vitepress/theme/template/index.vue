@@ -4,9 +4,7 @@
     <h1 class="name">
       <span class="title">
         <span>CAN BLOG</span>
-        <!-- <span>        -->
-          Vitepress & Antdv.
-        <!-- </span> -->
+        Vitepress & Antdv.
       </span>
     </h1>
     <div class="other">
@@ -89,6 +87,11 @@ const description = [
   letter-spacing: -1.5px;
   max-width: 960px;
   margin: 0 auto;
+  text-align: center;
+  
+  @media (max-width: 768px) {
+    font-size: 48px;
+  }
 }
 .title {
   background: var(--vp-home-hero-name-background);
@@ -118,6 +121,17 @@ const description = [
   font-size: 22px;
   margin: 24px auto 40px;
   letter-spacing: 1px;
+  text-align: center;
+
+  @media (max-width: 768px) {
+    font-size: 18px;
+    margin: 20px auto 30px;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 14px;
+    margin: 16px auto 24px;
+  }
 }
 .buttons {
   display: flex;
@@ -137,8 +151,21 @@ const description = [
     transition: all 0.5s ease !important; /* 明确指定所有属性过渡 */
     background-color: var(--vp-button-alt-bg);
     border: 1px solid var(--vp-button-alt-bg);
+    min-width: 126px;
     &:hover {
       opacity: .6;
+    }
+    
+    @media (max-width: 768px) {
+      // transform: scale(0.8);
+      padding: 8px 16px;
+      font-size: 14px;
+    }
+    
+    @media (max-width: 480px) {
+      // transform: scale(0.6);
+      padding: 6px 12px;
+      font-size: 12px;
     }
   }
   .primary {
@@ -173,18 +200,16 @@ const description = [
   margin-bottom: 30px;
 }
 .other-box {
-  // border: 1px solid var(--vp-c-border);
-  // height: 80vh;
   width: 100%;
   display: flex;
   justify-content: center;
-  padding: 0 380px;
   .description {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     >div {
       margin: 40px;
-      flex: 1;
+      width: 220px;
       >.title-des {
         font-size: 22px;
         font-weight: 600;
