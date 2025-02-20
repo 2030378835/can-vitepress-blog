@@ -3,11 +3,21 @@ layout: doc
 title: '项目说明'
 ---
 <script setup>
-  import { ref } from 'vue'
+  import { ref, onMounted } from 'vue'
   import { withBase } from 'vitepress'
   import Progress from './components/progress/index.vue'
   import EllipsisSpan from './components/ellipsisSpan/index.vue'
-  import { Checkbox } from 'ant-design-vue'
+  import { Checkbox, AvatarGroup, Avatar, Tooltip } from 'ant-design-vue'
+
+  import { getContributors } from '../docs/.vitepress/utils/contributors.ts'
+
+  const list = ref([])
+
+  onMounted(async () => {
+    const res = await getContributors()
+    list.value = res
+    console.log(res)
+  })
 
   const checked = ref(true)
 </script>
@@ -125,3 +135,12 @@ can-blog 是一个基于 vitepress + antdv 的博客系统，基于 can-blog 开
 > 欢迎在以下评论区域进行反馈，我会及时回复
 
 谢谢大家
+
+### 4.3 贡献者
+
+<div style="margin-top: 10px"/> 
+<AvatarGroup>
+  <Tooltip v-for="item in list" :title="item.login" placement="top">
+    <a :href="item.html_url"><Avatar :src="item.avatar_url" /></a>
+  </Tooltip>
+</AvatarGroup>
