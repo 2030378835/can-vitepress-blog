@@ -1,7 +1,6 @@
 <template>
   <div v-if="!loading" class="commits">
     <span style="font-size: larger; font-weight: 600;">Commits</span>
-    <!-- <Divider style="background-color: var(--vp-c-brand-1);" /> -->
     <div class="divider"></div>
     <Timeline>
       <TimelineItem v-for="(i,key,index) in commits" :key="key">
@@ -9,9 +8,9 @@
         <div class="commits-item-box">
           <div v-for="(commit,index) in i" :key="index">
             <div>
-              <div class="title">
+              <EllipsisSpan width="100%" class="title">
                 <a :href="commit.url" target="_blank" rel="noopener noreferrer">{{ commit.message }}</a>
-              </div>
+              </EllipsisSpan>
               <div class="commitor">
                 <img v-if="!commit.avatar_url" src="https://github.githubassets.com/images/gravatars/gravatar-user-420.png?size=32" />
                 <img v-else :src="commit.avatar_url" />
@@ -23,8 +22,8 @@
               </div>
             </div>
             <div>
-              <span v-if="commit.verification?.verified">verified</span>
-              <div>
+              <span style="min-width: 60px;" v-if="commit.verification?.verified">verified</span>
+              <div style="min-width: 42px;">
                 <a :href="commit.parents[0]?.html_url" style="font-size: 14px;">{{ `</>` }}</a>
               </div>
             </div>
@@ -40,8 +39,7 @@
 import { ref, onMounted } from 'vue'
 import { getCommits } from '../../utils/commits'
 import { Timeline, TimelineItem, Avatar, Tooltip } from 'ant-design-vue'
-import { CodeOutlined } from  '@ant-design/icons-vue'
-
+import EllipsisSpan from '../../../components/ellipsisSpan/index.vue'
 const commits = ref([])
 const loading = ref(false)
 
@@ -187,6 +185,9 @@ onMounted(async () => {
       color: var(--vp-c-text-2);
       display: flex;
       align-items: center;
+      @media (max-width: 480px) {
+        display: none;
+      }
       img {
         width: 14px;
         height: 14px;

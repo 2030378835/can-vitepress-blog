@@ -8,6 +8,7 @@
     class="ellipsis"
   >
     {{ props.text }}
+    <slot></slot>
   </div>
 </template>
 

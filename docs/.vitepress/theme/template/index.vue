@@ -14,7 +14,7 @@
       <div 
         @click="goToPath('/pages/about/1、开始/1_includes')" 
         class="btn primary hover-rotate"
-        style="width: 126px;"
+        style="min-width: 126px;"
       >
         快速上手
         <span class="hand" style="display: block;">👋</span>
@@ -139,6 +139,10 @@ const description = [
   justify-content: center;
   margin: 0 auto;
   max-width: 960px;
+  @media (max-width: 480px) {
+    flex-direction: column;
+    gap: 20px;
+  }
   >div {
     margin:0 10px;
   }
@@ -151,21 +155,20 @@ const description = [
     transition: all 0.5s ease !important; /* 明确指定所有属性过渡 */
     background-color: var(--vp-button-alt-bg);
     border: 1px solid var(--vp-button-alt-bg);
-    min-width: 126px;
     &:hover {
       opacity: .6;
     }
     
     @media (max-width: 768px) {
-      // transform: scale(0.8);
       padding: 8px 16px;
       font-size: 14px;
     }
     
     @media (max-width: 480px) {
-      // transform: scale(0.6);
       padding: 6px 12px;
       font-size: 12px;
+      width: 100%;
+      text-align: center;
     }
   }
   .primary {
@@ -184,6 +187,9 @@ const description = [
       margin-left: 4px;
       transition: 300ms;
       font-size: small;
+    }
+    @media (max-width: 480px) {
+      justify-content: center;
     }
   }
   .hover-rotate:hover .hand {
