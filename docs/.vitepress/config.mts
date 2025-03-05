@@ -56,6 +56,11 @@ const vitePressOptions = {
                 isNew: true,
                 title: 'can-vitepress-blog',
                 link: 'https://github.com/2030378835/can-vitepress-blog'
+              },
+              {
+                isNew: true,
+                title: 'vue-qc-admin',
+                link: 'https://gitee.com/qq2057187934/vue-qc-admin'
               }
             ]
           }
