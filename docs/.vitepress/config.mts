@@ -61,6 +61,11 @@ const vitePressOptions = {
                 isNew: true,
                 title: 'vue-qc-admin',
                 link: 'https://gitee.com/qq2057187934/vue-qc-admin'
+              },
+              {
+                isNew: true,
+                title: 'slim-vid',
+                link: 'https://2030378835.github.io/slim-vid/'
               }
             ]
           }
