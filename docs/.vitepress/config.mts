@@ -66,6 +66,11 @@ const vitePressOptions = {
                 isNew: true,
                 title: 'slim-vid',
                 link: 'https://2030378835.github.io/slim-vid/'
+              },
+              {
+                isNew: true,
+                title: 'drop-vid',
+                link: 'https://2030378835.github.io/drop-vid/'
               }
             ]
           }
